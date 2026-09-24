@@ -20,7 +20,7 @@ def nid():
 
 def T(name, content, size=14, fill="$c.fg", align="left", weight="400", w=None):
     o = {"id": nid(), "type": "text", "name": name, "content": content,
-         "fill": fill, "fontSize": size, "fontFamily": "Inter",
+         "fill": fill, "fontSize": size, "fontFamily": "Outfit",
          "textAlign": align, "fontWeight": weight,
          "textGrowth": "fixed-width" if w else "auto"}
     if w:
@@ -64,13 +64,29 @@ VARS = {
 def V(k):
     return "$" + k
 
+def IC(name, glyph, size=20, fg="$c.onpri", bg="$c.pri", box=40,
+        radius=12):
+    """Icon glyph in colored box (glyphs render as Outfit text)."""
+    return F(name, box, box, V(bg[1:]) if bg.startswith("$") else bg, [
+        T(name + "G", glyph, size, V(fg[1:]) if fg.startswith("$") else fg,
+          align="center", weight="700", w=box - 8)], radius,
+        {"layout": "vertical", "justifyContent": "center",
+         "alignItems": "center"})
+
+# icon glyphs per slot (letters render reliably in Outfit)
+IC_LOGO, IC_CART, IC_HOME = "B", "K", "B"
+IC_HIST, IC_MORE, IC_BACK = "R", "L", "<"
+IC_SEARCH, IC_USER, IC_BELL = "C", "U", "O"
+IC_OK, IC_QRIS = "V", "Q"
+
 STATUS = lambda tag: F("Status " + tag, 390, 62, V("c.card"), [
     T("Clock", "09.41", 14, V("c.fg"), weight="600")], 0,
     {"layout": "horizontal", "justifyContent": "space_between",
      "alignItems": "center", "padding": 20})
 
 def NAVBACK(tag, title, sub=None):
-    kids = [T("Back", "<", 18, V("c.fg"), weight="700")]
+    kids = [IC("Back" + tag, IC_BACK, size=16, fg="$c.fg",
+               bg="$c.mut", box=36, radius=10)]
     tcol = [T("Title", title, 16, V("c.fg"), weight="700")]
     if sub:
         tcol.append(T("Subtitle", sub, 11, V("c.mfg")))
@@ -136,7 +152,7 @@ cartrow = F("Cmp CartRow", 358, 76, V("c.card"), [
         "strokeWidth": 1}, reuse=True)
 
 menrow = F("Cmp MenuRow", 358, 60, V("c.card"), [
-    R("D_MN_IC", V("c.mut"), 40, 40, 12),
+    IC("D_MN_IC_BOX", "M", size=18, box=40, radius=12),
     T("D_MN_LBL", "Menu", 14, V("c.fg"), weight="600", w=220),
     T("D_MN_AR", ">", 16, V("c.mfg"), align="right", weight="700",
       w=30),
@@ -198,7 +214,8 @@ screens = []
 def SCR(name, kids, x):
     s = F(name, 390, 844, V("c.bg"), kids, 36,
           {"x": x, "y": 0, "layout": "vertical"})
-    lbl = T("ArtLabel " + name, name, 20, V("c.fg"), weight="700", w=390)
+    # single section title only (pen.dev shows its own frame name too)
+    lbl = T(name, name, 20, V("c.fg"), weight="700", w=390)
     lbl["x"], lbl["y"] = x, -50
     children.append(lbl)
     screens.append(s)
@@ -212,7 +229,7 @@ def next_x():
 # ============ 01 SPLASH ============
 SCR("01 Splash", [
     F("SplashBody", 390, 782, V("c.pri"), [
-        R("SplashLogo", V("c.onpri"), 96, 96, 26),
+        IC("SplashLogo", IC_LOGO, size=48, box=96, radius=26),
         T("SplashName", "Berkah POS", 28, V("c.onpri"), align="center",
           weight="700", w=340),
         T("SplashSub", "Kasir cepat untuk toko Anda", 14,
@@ -230,7 +247,7 @@ SCR("01 Splash", [
 SCR("02 Login", [
     STATUS("login"),
     F("LoginBody", 390, 600, V("c.bg"), [
-        R("LoginLogo", V("c.pri"), 72, 72, 20),
+        IC("LoginLogo", IC_LOGO, size=36, box=72, radius=20),
         T("LoginTitle", "Selamat Datang", 22, V("c.fg"), align="center",
           weight="700", w=340),
         T("LoginSub", "Masuk untuk mulai berjualan", 13, V("c.mfg"),
@@ -308,7 +325,7 @@ cards = [RB("Cmp ProdCard", "Card %d" % i, D_PROD_NM=nm,
 SCR("05 Katalog", [
     STATUS("kat"),
     F("AppBar", 390, 64, V("c.card"), [
-        R("Logo", V("c.pri"), 40, 40, 12),
+        IC("Logo", IC_LOGO, size=20, box=40, radius=12),
         F("Store", 220, 46, V("c.card"), [
             T("StoreNm", "Toko Berkah Jaya", 16, V("c.fg"),
               weight="700"),
@@ -317,10 +334,12 @@ SCR("05 Katalog", [
     ], 0, {"layout": "horizontal", "gap": 12, "alignItems": "center",
            "padding": 16}),
     F("SearchW", 390, 68, V("c.card"), [
-        F("Search", 358, 46, V("c.mut"),
-          [T("SearchHint", "Cari produk / scan barcode...", 13,
-             V("c.mfg"), w=326)], 12,
-          {"layout": "vertical", "justifyContent": "center",
+        F("Search", 358, 46, V("c.mut"), [
+            IC("SearchIc", IC_SEARCH, size=16, fg="$c.mfg",
+               bg="$c.mut", box=32, radius=8),
+            T("SearchHint", "Cari produk / scan barcode...", 13,
+              V("c.mfg"), w=280)], 12,
+          {"layout": "horizontal", "gap": 8, "alignItems": "center",
            "padding": 14})],
       0, {"layout": "vertical", "alignItems": "center"}),
     F("Cats", 390, 60, V("c.bg"), chips, 0,
@@ -343,14 +362,29 @@ SCR("05 Katalog", [
            D_BTN_LBL="Lihat Keranjang"),
     ], 0, {"layout": "vertical", "gap": 8, "padding": 16}),
     F("TabBar", 390, 68, V("c.card"), [
-        T("Tb1", "Beranda", 10, V("c.pri"), align="center",
-          weight="700", w=80),
-        T("Tb2", "Keranjang (2)", 10, V("c.mfg"), align="center",
-          weight="700", w=90),
-        T("Tb3", "Riwayat", 10, V("c.mfg"), align="center",
-          weight="700", w=80),
-        T("Tb4", "Lainnya", 10, V("c.mfg"), align="center",
-          weight="700", w=80),
+        F("TbHome", 80, 52, V("c.card"), [
+            IC("TbHomeIc", IC_HOME, size=16, box=28, radius=8),
+            T("Tb1", "Beranda", 10, V("c.pri"), align="center",
+              weight="700", w=80)], 0,
+          {"layout": "vertical", "gap": 2, "alignItems": "center"}),
+        F("TbCart", 90, 52, V("c.card"), [
+            IC("TbCartIc", IC_CART, size=16, fg="$c.mfg", bg="$c.mut",
+               box=28, radius=8),
+            T("Tb2", "Keranjang (2)", 10, V("c.mfg"), align="center",
+              weight="700", w=90)], 0,
+          {"layout": "vertical", "gap": 2, "alignItems": "center"}),
+        F("TbHist", 80, 52, V("c.card"), [
+            IC("TbHistIc", IC_HIST, size=16, fg="$c.mfg", bg="$c.mut",
+               box=28, radius=8),
+            T("Tb3", "Riwayat", 10, V("c.mfg"), align="center",
+              weight="700", w=80)], 0,
+          {"layout": "vertical", "gap": 2, "alignItems": "center"}),
+        F("TbMore", 80, 52, V("c.card"), [
+            IC("TbMoreIc", IC_MORE, size=16, fg="$c.mfg", bg="$c.mut",
+               box=28, radius=8),
+            T("Tb4", "Lainnya", 10, V("c.mfg"), align="center",
+              weight="700", w=80)], 0,
+          {"layout": "vertical", "gap": 2, "alignItems": "center"}),
     ], 0, {"layout": "horizontal", "justifyContent": "space_around",
            "alignItems": "center"}),
 ], next_x())
@@ -505,7 +539,8 @@ SCR("10 Bayar QRIS", [
 SCR("11 Sukses", [
     STATUS("ok"),
     F("Hero", 390, 200, V("c.bg"), [
-        R("Check", V("c.okbg"), 88, 88, 999, stroke=V("c.ok"), sw=2),
+        IC("Check", IC_OK, size=40, fg="$c.ok", bg="$c.okbg",
+           box=88, radius=999),
         T("OkTitle", "Pembayaran Berhasil", 19, V("c.fg"),
           align="center", weight="700", w=320),
         T("OkSub", "Order #129 - Tunai - 09.42 WIB", 13,
@@ -782,7 +817,8 @@ doc = {
 }
 
 print("screens:", len(screens), "| comps:", len(children))
-OUT = "/opt/data/sketches/pos-kasir/kasir-pos-full-clean-light-mobile.pen"
+import pathlib as _pl
+OUT = str(_pl.Path(__file__).with_name("kasir-pos.pen"))
 with open(OUT, "w", encoding="utf-8") as f:
     json.dump(doc, f, indent=1, ensure_ascii=False)
 print("written " + OUT)
