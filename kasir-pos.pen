@@ -65,7 +65,7 @@
  },
  "children": [
   {
-   "id": "NesfW",
+   "id": "9oKcy",
    "type": "frame",
    "name": "Cmp BtnPrimary",
    "width": 358,
@@ -81,7 +81,7 @@
    ],
    "children": [
     {
-     "id": "NDZms",
+     "id": "03sX3",
      "type": "text",
      "name": "D_BTN_LBL",
      "content": "CTA",
@@ -98,7 +98,7 @@
    "y": 1200
   },
   {
-   "id": "Phwvy",
+   "id": "YfVsq",
    "type": "frame",
    "name": "Cmp ProdCard",
    "width": 167,
@@ -113,7 +113,7 @@
    "strokeWidth": 1,
    "children": [
     {
-     "id": "kkxnk",
+     "id": "iXjkZ",
      "type": "rectangle",
      "name": "D_PROD_TH",
      "fill": "$c.mut",
@@ -122,7 +122,7 @@
      "cornerRadius": 10
     },
     {
-     "id": "d6OHI",
+     "id": "k7zSJ",
      "type": "text",
      "name": "D_PROD_NM",
      "content": "Nama Produk",
@@ -135,7 +135,7 @@
      "width": 147
     },
     {
-     "id": "hGXnu",
+     "id": "msQbJ",
      "type": "text",
      "name": "D_PROD_PR",
      "content": "Rp 0",
@@ -147,7 +147,7 @@
      "textGrowth": "auto"
     },
     {
-     "id": "ELzOG",
+     "id": "IaEPq",
      "type": "text",
      "name": "D_PROD_ST",
      "content": "Stok 0",
@@ -163,7 +163,7 @@
    "y": 1200
   },
   {
-   "id": "gQyHD",
+   "id": "KqrBS",
    "type": "frame",
    "name": "Cmp PayTile",
    "width": 167,
@@ -178,7 +178,7 @@
    "strokeWidth": 2,
    "children": [
     {
-     "id": "PVO94",
+     "id": "TW7md",
      "type": "text",
      "name": "D_TILE_LBL",
      "content": "Tunai",
@@ -195,7 +195,7 @@
    "y": 1200
   },
   {
-   "id": "j7GxF",
+   "id": "CDqun",
    "type": "frame",
    "name": "Cmp CartRow",
    "width": 358,
@@ -211,7 +211,7 @@
    "strokeWidth": 1,
    "children": [
     {
-     "id": "OJu0L",
+     "id": "GVhOa",
      "type": "rectangle",
      "name": "D_CR_TH",
      "fill": "$c.mut",
@@ -220,7 +220,7 @@
      "cornerRadius": 12
     },
     {
-     "id": "wCzox",
+     "id": "JtnyW",
      "type": "frame",
      "name": "D_CR_MID",
      "width": 170,
@@ -231,7 +231,7 @@
      "gap": 2,
      "children": [
       {
-       "id": "Vor3t",
+       "id": "8XZuF",
        "type": "text",
        "name": "D_CR_NM",
        "content": "Item",
@@ -244,7 +244,7 @@
        "width": 170
       },
       {
-       "id": "ISWEz",
+       "id": "P18OU",
        "type": "text",
        "name": "D_CR_PR",
        "content": "Rp 0 /pcs",
@@ -259,7 +259,7 @@
      ]
     },
     {
-     "id": "vEgO5",
+     "id": "4ze7t",
      "type": "text",
      "name": "D_CR_AMT",
      "content": "Rp 0",
@@ -276,7 +276,7 @@
    "y": 1200
   },
   {
-   "id": "4WVIY",
+   "id": "hrSQt",
    "type": "frame",
    "name": "Cmp MenuRow",
    "width": 358,
@@ -292,34 +292,34 @@
    "strokeWidth": 1,
    "children": [
     {
-     "id": "sdd9A",
+     "id": "hCESe",
      "type": "frame",
      "name": "D_MN_IC_BOX",
      "width": 40,
      "height": 40,
-     "fill": "$c.pri",
+     "fill": "$c.mut",
      "cornerRadius": 12,
      "layout": "vertical",
      "justifyContent": "center",
      "alignItems": "center",
      "children": [
       {
-       "id": "10Ra9",
-       "type": "text",
-       "name": "D_MN_IC_BOXG",
-       "content": "M",
-       "fill": "$c.onpri",
-       "fontSize": 18,
-       "fontFamily": "Outfit",
-       "textAlign": "center",
-       "fontWeight": "700",
-       "textGrowth": "fixed-width",
-       "width": 32
+       "id": "4Rktl",
+       "type": "rectangle",
+       "name": "D_MN_IC_BOXImg",
+       "fill": {
+        "type": "image",
+        "url": "./assets/icons/chevron-right-mut.png",
+        "mode": "fill"
+       },
+       "width": 28,
+       "height": 28,
+       "cornerRadius": 0
       }
      ]
     },
     {
-     "id": "vwIDC",
+     "id": "mKf7M",
      "type": "text",
      "name": "D_MN_LBL",
      "content": "Menu",
@@ -332,7 +332,7 @@
      "width": 220
     },
     {
-     "id": "fuPXn",
+     "id": "Uq2Fh",
      "type": "text",
      "name": "D_MN_AR",
      "content": ">",
@@ -349,7 +349,7 @@
    "y": 1200
   },
   {
-   "id": "WdWJD",
+   "id": "gwYRL",
    "type": "frame",
    "name": "Cmp Stat",
    "width": 171,
@@ -364,7 +364,7 @@
    "strokeWidth": 1,
    "children": [
     {
-     "id": "RWYlQ",
+     "id": "tntGw",
      "type": "text",
      "name": "D_ST_LBL",
      "content": "Label",
@@ -377,7 +377,7 @@
      "width": 139
     },
     {
-     "id": "fJaw1",
+     "id": "FnMMs",
      "type": "text",
      "name": "D_ST_VAL",
      "content": "0",
@@ -394,7 +394,7 @@
    "y": 1200
   },
   {
-   "id": "MzWn7",
+   "id": "d19MS",
    "type": "frame",
    "name": "Cmp Field",
    "width": 358,
@@ -405,7 +405,7 @@
    "gap": 6,
    "children": [
     {
-     "id": "gc1Th",
+     "id": "whnMu",
      "type": "text",
      "name": "D_FD_LBL",
      "content": "Label",
@@ -418,7 +418,7 @@
      "width": 326
     },
     {
-     "id": "uUNTH",
+     "id": "ztK6C",
      "type": "frame",
      "name": "D_FD_BOX",
      "width": 326,
@@ -432,7 +432,7 @@
      "strokeWidth": 1,
      "children": [
       {
-       "id": "GyUfC",
+       "id": "vPmWv",
        "type": "text",
        "name": "D_FD_VAL",
        "content": "Value",
@@ -451,7 +451,7 @@
    "y": 1200
   },
   {
-   "id": "rxu9e",
+   "id": "NUCxQ",
    "type": "text",
    "name": "01 Splash",
    "content": "01 Splash",
@@ -466,7 +466,7 @@
    "y": -50
   },
   {
-   "id": "T8SlQ",
+   "id": "PApa0",
    "type": "text",
    "name": "02 Login",
    "content": "02 Login",
@@ -481,7 +481,7 @@
    "y": -50
   },
   {
-   "id": "BjokQ",
+   "id": "BI4Oi",
    "type": "text",
    "name": "03 PIN Kasir",
    "content": "03 PIN Kasir",
@@ -496,7 +496,7 @@
    "y": -50
   },
   {
-   "id": "QpBLM",
+   "id": "Ep21M",
    "type": "text",
    "name": "04 Pilih Shift",
    "content": "04 Pilih Shift",
@@ -511,7 +511,7 @@
    "y": -50
   },
   {
-   "id": "K3pG9",
+   "id": "MmKQ9",
    "type": "text",
    "name": "05 Katalog",
    "content": "05 Katalog",
@@ -526,7 +526,7 @@
    "y": -50
   },
   {
-   "id": "nCt0I",
+   "id": "HZ7N4",
    "type": "text",
    "name": "06 Detail Produk",
    "content": "06 Detail Produk",
@@ -541,7 +541,7 @@
    "y": -50
   },
   {
-   "id": "TTGxz",
+   "id": "5Peca",
    "type": "text",
    "name": "07 Keranjang",
    "content": "07 Keranjang",
@@ -556,7 +556,7 @@
    "y": -50
   },
   {
-   "id": "VRX4P",
+   "id": "hRNss",
    "type": "text",
    "name": "08 Pelanggan",
    "content": "08 Pelanggan",
@@ -571,7 +571,7 @@
    "y": -50
   },
   {
-   "id": "nsI0R",
+   "id": "1cGqf",
    "type": "text",
    "name": "09 Bayar Tunai",
    "content": "09 Bayar Tunai",
@@ -586,7 +586,7 @@
    "y": -50
   },
   {
-   "id": "zzPZY",
+   "id": "R1ZxA",
    "type": "text",
    "name": "10 Bayar QRIS",
    "content": "10 Bayar QRIS",
@@ -601,7 +601,7 @@
    "y": -50
   },
   {
-   "id": "vl7F4",
+   "id": "4aIyA",
    "type": "text",
    "name": "11 Sukses",
    "content": "11 Sukses",
@@ -616,7 +616,7 @@
    "y": -50
   },
   {
-   "id": "RPei7",
+   "id": "yjRNP",
    "type": "text",
    "name": "12 Struk Nota",
    "content": "12 Struk Nota",
@@ -631,7 +631,7 @@
    "y": -50
   },
   {
-   "id": "7sBah",
+   "id": "cVLz9",
    "type": "text",
    "name": "13 Riwayat",
    "content": "13 Riwayat",
@@ -646,7 +646,7 @@
    "y": -50
   },
   {
-   "id": "JpnSz",
+   "id": "tKhAO",
    "type": "text",
    "name": "14 Detail Trx",
    "content": "14 Detail Trx",
@@ -661,7 +661,7 @@
    "y": -50
   },
   {
-   "id": "qCcrG",
+   "id": "ldCpP",
    "type": "text",
    "name": "15 Tutup Shift",
    "content": "15 Tutup Shift",
@@ -676,7 +676,7 @@
    "y": -50
   },
   {
-   "id": "oz1rE",
+   "id": "C40kW",
    "type": "text",
    "name": "16 Stok",
    "content": "16 Stok",
@@ -691,7 +691,7 @@
    "y": -50
   },
   {
-   "id": "UiH6p",
+   "id": "Dn3qd",
    "type": "text",
    "name": "17 Tambah Produk",
    "content": "17 Tambah Produk",
@@ -706,7 +706,7 @@
    "y": -50
   },
   {
-   "id": "9gZH3",
+   "id": "SendU",
    "type": "text",
    "name": "18 Laporan",
    "content": "18 Laporan",
@@ -721,7 +721,7 @@
    "y": -50
   },
   {
-   "id": "hPU8h",
+   "id": "la12R",
    "type": "text",
    "name": "19 Pengaturan",
    "content": "19 Pengaturan",
@@ -736,7 +736,7 @@
    "y": -50
   },
   {
-   "id": "gglqQ",
+   "id": "HcVnE",
    "type": "frame",
    "name": "01 Splash",
    "width": 390,
@@ -748,7 +748,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "pAEB2",
+     "id": "dg8PY",
      "type": "frame",
      "name": "SplashBody",
      "width": 390,
@@ -761,34 +761,20 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "Z2rlc",
-       "type": "frame",
+       "id": "EDjcX",
+       "type": "rectangle",
        "name": "SplashLogo",
+       "fill": {
+        "type": "image",
+        "url": "./assets/icons/store-white.png",
+        "mode": "fill"
+       },
        "width": 96,
        "height": 96,
-       "fill": "$c.pri",
-       "cornerRadius": 26,
-       "layout": "vertical",
-       "justifyContent": "center",
-       "alignItems": "center",
-       "children": [
-        {
-         "id": "7uyRz",
-         "type": "text",
-         "name": "SplashLogoG",
-         "content": "B",
-         "fill": "$c.onpri",
-         "fontSize": 48,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 88
-        }
-       ]
+       "cornerRadius": 26
       },
       {
-       "id": "MzCLq",
+       "id": "UMqhX",
        "type": "text",
        "name": "SplashName",
        "content": "Berkah POS",
@@ -801,7 +787,7 @@
        "width": 340
       },
       {
-       "id": "wFyZc",
+       "id": "kqTno",
        "type": "text",
        "name": "SplashSub",
        "content": "Kasir cepat untuk toko Anda",
@@ -814,7 +800,7 @@
        "width": 340
       },
       {
-       "id": "Mqg5q",
+       "id": "NOZyS",
        "type": "text",
        "name": "SplashVer",
        "content": "v2.4.0",
@@ -829,7 +815,7 @@
      ]
     },
     {
-     "id": "siLcB",
+     "id": "Z5v03",
      "type": "frame",
      "name": "SplashFoot",
      "width": 390,
@@ -840,7 +826,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "YfpzD",
+       "id": "NwnMv",
        "type": "text",
        "name": "SplashLoad",
        "content": "Memuat...",
@@ -857,7 +843,7 @@
    ]
   },
   {
-   "id": "S4xOH",
+   "id": "8ec3K",
    "type": "frame",
    "name": "02 Login",
    "width": 390,
@@ -869,7 +855,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "0BT71",
+     "id": "TAE3c",
      "type": "frame",
      "name": "Status login",
      "width": 390,
@@ -882,7 +868,7 @@
      "padding": 20,
      "children": [
       {
-       "id": "rNo1w",
+       "id": "RfhZe",
        "type": "text",
        "name": "Clock",
        "content": "09.41",
@@ -896,7 +882,7 @@
      ]
     },
     {
-     "id": "W8Rne",
+     "id": "WK1JM",
      "type": "frame",
      "name": "LoginBody",
      "width": 390,
@@ -909,34 +895,34 @@
      "padding": 16,
      "children": [
       {
-       "id": "e0AVh",
+       "id": "iUYtM",
        "type": "frame",
        "name": "LoginLogo",
        "width": 72,
        "height": 72,
-       "fill": "$c.pri",
+       "fill": "$c.mut",
        "cornerRadius": 20,
        "layout": "vertical",
        "justifyContent": "center",
        "alignItems": "center",
        "children": [
         {
-         "id": "ib1hP",
-         "type": "text",
-         "name": "LoginLogoG",
-         "content": "B",
-         "fill": "$c.onpri",
-         "fontSize": 36,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 64
+         "id": "dvet5",
+         "type": "rectangle",
+         "name": "LoginLogoImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/store-blue.png",
+          "mode": "fill"
+         },
+         "width": 60,
+         "height": 60,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "4A0Y9",
+       "id": "saNS9",
        "type": "text",
        "name": "LoginTitle",
        "content": "Selamat Datang",
@@ -949,7 +935,7 @@
        "width": 340
       },
       {
-       "id": "GsGoF",
+       "id": "bxRxV",
        "type": "text",
        "name": "LoginSub",
        "content": "Masuk untuk mulai berjualan",
@@ -962,39 +948,39 @@
        "width": 340
       },
       {
-       "id": "b6hFU",
+       "id": "Xq6VZ",
        "type": "ref",
        "name": "F-User",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Username"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "andi_kasir"
         }
        }
       },
       {
-       "id": "WHK3D",
+       "id": "KbhZv",
        "type": "ref",
        "name": "F-Pass",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Password"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "************"
         }
        }
       },
       {
-       "id": "luhJQ",
+       "id": "WgQGI",
        "type": "text",
        "name": "LoginForgot",
        "content": "Lupa password?",
@@ -1007,20 +993,20 @@
        "width": 358
       },
       {
-       "id": "VUsMs",
+       "id": "LLtLT",
        "type": "ref",
        "name": "B-Login",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Masuk"
         }
        }
       },
       {
-       "id": "QVMKc",
+       "id": "Pthqi",
        "type": "text",
        "name": "LoginBio",
        "content": "atau masuk dengan fingerprint",
@@ -1037,7 +1023,7 @@
    ]
   },
   {
-   "id": "LjbyO",
+   "id": "QUf8U",
    "type": "frame",
    "name": "03 PIN Kasir",
    "width": 390,
@@ -1049,7 +1035,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "IQWTf",
+     "id": "maSXa",
      "type": "frame",
      "name": "Status pin",
      "width": 390,
@@ -1062,7 +1048,7 @@
      "padding": 20,
      "children": [
       {
-       "id": "sZIW6",
+       "id": "vXaZh",
        "type": "text",
        "name": "Clock",
        "content": "09.41",
@@ -1076,7 +1062,7 @@
      ]
     },
     {
-     "id": "AiXog",
+     "id": "YxhNk",
      "type": "frame",
      "name": "PinBody",
      "width": 390,
@@ -1089,7 +1075,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "tMZtR",
+       "id": "2vtrO",
        "type": "text",
        "name": "PinTitle",
        "content": "Masukkan PIN",
@@ -1102,7 +1088,7 @@
        "width": 340
       },
       {
-       "id": "1fnmN",
+       "id": "xJg75",
        "type": "text",
        "name": "PinSub",
        "content": "Andi - Shift Pagi",
@@ -1115,7 +1101,7 @@
        "width": 340
       },
       {
-       "id": "p3GGB",
+       "id": "ASHjB",
        "type": "text",
        "name": "PinDots",
        "content": "● ● ● ○ ○ ○",
@@ -1128,7 +1114,7 @@
        "width": 340
       },
       {
-       "id": "2imlL",
+       "id": "YGnUG",
        "type": "frame",
        "name": "PinPad",
        "width": 330,
@@ -1140,7 +1126,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "CcpvE",
+         "id": "93fvZ",
          "type": "frame",
          "name": "PinRow",
          "width": 330,
@@ -1152,7 +1138,7 @@
          "justifyContent": "center",
          "children": [
           {
-           "id": "KSd9q",
+           "id": "P0G5G",
            "type": "text",
            "name": "PinD",
            "content": "1",
@@ -1165,7 +1151,7 @@
            "width": 90
           },
           {
-           "id": "EYci0",
+           "id": "EMrhv",
            "type": "text",
            "name": "PinD",
            "content": "2",
@@ -1178,7 +1164,7 @@
            "width": 90
           },
           {
-           "id": "iZTsv",
+           "id": "RxfjH",
            "type": "text",
            "name": "PinD",
            "content": "3",
@@ -1193,7 +1179,7 @@
          ]
         },
         {
-         "id": "vpriM",
+         "id": "N9qBx",
          "type": "frame",
          "name": "PinRow",
          "width": 330,
@@ -1205,7 +1191,7 @@
          "justifyContent": "center",
          "children": [
           {
-           "id": "hm4za",
+           "id": "HZ5Cc",
            "type": "text",
            "name": "PinD",
            "content": "4",
@@ -1218,7 +1204,7 @@
            "width": 90
           },
           {
-           "id": "elRcw",
+           "id": "92fe7",
            "type": "text",
            "name": "PinD",
            "content": "5",
@@ -1231,7 +1217,7 @@
            "width": 90
           },
           {
-           "id": "l9yln",
+           "id": "FVHPX",
            "type": "text",
            "name": "PinD",
            "content": "6",
@@ -1246,7 +1232,7 @@
          ]
         },
         {
-         "id": "qQnc8",
+         "id": "sYGkn",
          "type": "frame",
          "name": "PinRow",
          "width": 330,
@@ -1258,7 +1244,7 @@
          "justifyContent": "center",
          "children": [
           {
-           "id": "1aAMZ",
+           "id": "9ynNH",
            "type": "text",
            "name": "PinD",
            "content": "7",
@@ -1271,7 +1257,7 @@
            "width": 90
           },
           {
-           "id": "mtIJr",
+           "id": "jbvXC",
            "type": "text",
            "name": "PinD",
            "content": "8",
@@ -1284,7 +1270,7 @@
            "width": 90
           },
           {
-           "id": "a8jLZ",
+           "id": "RamKu",
            "type": "text",
            "name": "PinD",
            "content": "9",
@@ -1299,7 +1285,7 @@
          ]
         },
         {
-         "id": "edmI2",
+         "id": "pTvgh",
          "type": "frame",
          "name": "PinRow",
          "width": 330,
@@ -1311,7 +1297,7 @@
          "justifyContent": "center",
          "children": [
           {
-           "id": "p4KrX",
+           "id": "MMoMR",
            "type": "text",
            "name": "PinD",
            "content": " ",
@@ -1324,7 +1310,7 @@
            "width": 90
           },
           {
-           "id": "jyZsK",
+           "id": "xFlLM",
            "type": "text",
            "name": "PinD",
            "content": "0",
@@ -1337,7 +1323,7 @@
            "width": 90
           },
           {
-           "id": "o60y2",
+           "id": "w5ZcA",
            "type": "text",
            "name": "PinD",
            "content": "X",
@@ -1358,7 +1344,7 @@
    ]
   },
   {
-   "id": "eVH2A",
+   "id": "uppAW",
    "type": "frame",
    "name": "04 Pilih Shift",
    "width": 390,
@@ -1370,7 +1356,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "K1fry",
+     "id": "5DnTS",
      "type": "frame",
      "name": "Nav shift",
      "width": 390,
@@ -1383,7 +1369,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "89FFv",
+       "id": "l6hRp",
        "type": "frame",
        "name": "Backshift",
        "width": 36,
@@ -1395,22 +1381,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "aaD8h",
-         "type": "text",
-         "name": "BackshiftG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "a3XOT",
+         "type": "rectangle",
+         "name": "BackshiftImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "AMjpU",
+       "id": "8rZJL",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -1421,7 +1407,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "mnZ02",
+         "id": "Sv5GK",
          "type": "text",
          "name": "Title",
          "content": "Pilih Shift",
@@ -1437,7 +1423,7 @@
      ]
     },
     {
-     "id": "HGiAy",
+     "id": "kXhvi",
      "type": "frame",
      "name": "ShiftBody",
      "width": 390,
@@ -1449,56 +1435,77 @@
      "padding": 16,
      "children": [
       {
-       "id": "6SBZi",
+       "id": "l8kV4",
        "type": "ref",
        "name": "Sh-Pagi",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Shift Pagi (07-15)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/clock-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "fPa7P",
+       "id": "Etrzb",
        "type": "ref",
        "name": "Sh-Siang",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Shift Siang (15-23)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/clock-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "Ee5KF",
+       "id": "xxkil",
        "type": "ref",
        "name": "Sh-Malam",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Shift Malam (23-07)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/clock-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "ehsLz",
+       "id": "0ul7W",
        "type": "ref",
        "name": "F-Modal",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Modal awal kas (Rp)"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "500.000"
         }
        }
@@ -1506,7 +1513,7 @@
      ]
     },
     {
-     "id": "68qTC",
+     "id": "HaR4j",
      "type": "frame",
      "name": "Foot shift",
      "width": 390,
@@ -1518,14 +1525,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "nhwhP",
+       "id": "okiiU",
        "type": "ref",
        "name": "CTA shift",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Mulai Shift"
         }
        }
@@ -1535,7 +1542,7 @@
    ]
   },
   {
-   "id": "iQd2f",
+   "id": "blw9c",
    "type": "frame",
    "name": "05 Katalog",
    "width": 390,
@@ -1547,7 +1554,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "ntT1G",
+     "id": "EZABv",
      "type": "frame",
      "name": "Status kat",
      "width": 390,
@@ -1560,7 +1567,7 @@
      "padding": 20,
      "children": [
       {
-       "id": "5xsmj",
+       "id": "yZvH7",
        "type": "text",
        "name": "Clock",
        "content": "09.41",
@@ -1574,7 +1581,7 @@
      ]
     },
     {
-     "id": "hnomM",
+     "id": "mf861",
      "type": "frame",
      "name": "AppBar",
      "width": 390,
@@ -1587,34 +1594,34 @@
      "padding": 16,
      "children": [
       {
-       "id": "gWpML",
+       "id": "2E5rx",
        "type": "frame",
        "name": "Logo",
        "width": 40,
        "height": 40,
-       "fill": "$c.pri",
+       "fill": "$c.mut",
        "cornerRadius": 12,
        "layout": "vertical",
        "justifyContent": "center",
        "alignItems": "center",
        "children": [
         {
-         "id": "A4YFU",
-         "type": "text",
-         "name": "LogoG",
-         "content": "B",
-         "fill": "$c.onpri",
-         "fontSize": 20,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 32
+         "id": "SBpgZ",
+         "type": "rectangle",
+         "name": "LogoImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/store-blue.png",
+          "mode": "fill"
+         },
+         "width": 28,
+         "height": 28,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "0ISet",
+       "id": "CeG6H",
        "type": "frame",
        "name": "Store",
        "width": 220,
@@ -1625,7 +1632,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "7IBYS",
+         "id": "AMwNT",
          "type": "text",
          "name": "StoreNm",
          "content": "Toko Berkah Jaya",
@@ -1637,7 +1644,7 @@
          "textGrowth": "auto"
         },
         {
-         "id": "8rIya",
+         "id": "Xs3Cv",
          "type": "text",
          "name": "StoreSb",
          "content": "Andi - Shift Pagi",
@@ -1653,7 +1660,7 @@
      ]
     },
     {
-     "id": "e2ARo",
+     "id": "ch308",
      "type": "frame",
      "name": "SearchW",
      "width": 390,
@@ -1664,7 +1671,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "pBLZB",
+       "id": "FcaST",
        "type": "frame",
        "name": "Search",
        "width": 358,
@@ -1677,7 +1684,7 @@
        "padding": 14,
        "children": [
         {
-         "id": "B3y0c",
+         "id": "jCF1O",
          "type": "frame",
          "name": "SearchIc",
          "width": 32,
@@ -1689,22 +1696,22 @@
          "alignItems": "center",
          "children": [
           {
-           "id": "PL95F",
-           "type": "text",
-           "name": "SearchIcG",
-           "content": "C",
-           "fill": "$c.mfg",
-           "fontSize": 16,
-           "fontFamily": "Outfit",
-           "textAlign": "center",
-           "fontWeight": "700",
-           "textGrowth": "fixed-width",
-           "width": 24
+           "id": "6uBhk",
+           "type": "rectangle",
+           "name": "SearchIcImg",
+           "fill": {
+            "type": "image",
+            "url": "./assets/icons/search-mut.png",
+            "mode": "fill"
+           },
+           "width": 20,
+           "height": 20,
+           "cornerRadius": 0
           }
          ]
         },
         {
-         "id": "el8eA",
+         "id": "eNUiQ",
          "type": "text",
          "name": "SearchHint",
          "content": "Cari produk / scan barcode...",
@@ -1721,7 +1728,7 @@
      ]
     },
     {
-     "id": "EK0md",
+     "id": "V2syS",
      "type": "frame",
      "name": "Cats",
      "width": 390,
@@ -1734,7 +1741,7 @@
      "justifyContent": "center",
      "children": [
       {
-       "id": "w3aSy",
+       "id": "XEOXC",
        "type": "frame",
        "name": "Cat Semua",
        "width": 72,
@@ -1746,7 +1753,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "Opv1D",
+         "id": "bz1Ge",
          "type": "text",
          "name": "CatLbl",
          "content": "Semua",
@@ -1761,7 +1768,7 @@
        ]
       },
       {
-       "id": "F8s88",
+       "id": "7OvEX",
        "type": "frame",
        "name": "Cat Minuman",
        "width": 72,
@@ -1773,7 +1780,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "61JTH",
+         "id": "sayqp",
          "type": "text",
          "name": "CatLbl",
          "content": "Minuman",
@@ -1788,7 +1795,7 @@
        ]
       },
       {
-       "id": "j4kHN",
+       "id": "465YG",
        "type": "frame",
        "name": "Cat Makanan",
        "width": 72,
@@ -1800,7 +1807,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "9uMTx",
+         "id": "LoLxw",
          "type": "text",
          "name": "CatLbl",
          "content": "Makanan",
@@ -1815,7 +1822,7 @@
        ]
       },
       {
-       "id": "fgDIS",
+       "id": "JBDui",
        "type": "frame",
        "name": "Cat Snack",
        "width": 72,
@@ -1827,7 +1834,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "fWFOb",
+         "id": "tu3Yi",
          "type": "text",
          "name": "CatLbl",
          "content": "Snack",
@@ -1842,7 +1849,7 @@
        ]
       },
       {
-       "id": "RMV16",
+       "id": "dPY5o",
        "type": "frame",
        "name": "Cat More",
        "width": 34,
@@ -1854,7 +1861,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "B6pQC",
+         "id": "pePjY",
          "type": "text",
          "name": "CatLbl",
          "content": "+",
@@ -1871,7 +1878,7 @@
      ]
     },
     {
-     "id": "rs2zv",
+     "id": "neG5L",
      "type": "frame",
      "name": "Grid",
      "width": 390,
@@ -1884,7 +1891,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "xNLsj",
+       "id": "mLqGv",
        "type": "frame",
        "name": "GridR1",
        "width": 358,
@@ -1895,47 +1902,61 @@
        "gap": 10,
        "children": [
         {
-         "id": "JV5Ri",
+         "id": "2kFLT",
          "type": "ref",
          "name": "Card 0",
-         "ref": "Phwvy",
+         "ref": "YfVsq",
          "x": 0,
          "y": 0,
          "descendants": {
-          "d6OHI": {
+          "k7zSJ": {
            "content": "Kopi Tubruk 200g"
           },
-          "hGXnu": {
+          "msQbJ": {
            "content": "Rp 28.000"
           },
-          "ELzOG": {
+          "IaEPq": {
            "content": "Stok 42"
+          },
+          "iXjkZ": {
+           "fill": {
+            "type": "image",
+            "url": "./assets/kopi.jpg",
+            "mode": "fill"
+           }
           }
          }
         },
         {
-         "id": "PZHcg",
+         "id": "lCS4O",
          "type": "ref",
          "name": "Card 1",
-         "ref": "Phwvy",
+         "ref": "YfVsq",
          "x": 0,
          "y": 0,
          "descendants": {
-          "d6OHI": {
+          "k7zSJ": {
            "content": "Teh Botol 450ml"
           },
-          "hGXnu": {
+          "msQbJ": {
            "content": "Rp 6.000"
           },
-          "ELzOG": {
+          "IaEPq": {
            "content": "Stok 120"
+          },
+          "iXjkZ": {
+           "fill": {
+            "type": "image",
+            "url": "./assets/tehpucuk.jpg",
+            "mode": "fill"
+           }
           }
          }
         }
        ]
       },
       {
-       "id": "uwGAC",
+       "id": "1omaW",
        "type": "frame",
        "name": "GridR2",
        "width": 358,
@@ -1946,47 +1967,61 @@
        "gap": 10,
        "children": [
         {
-         "id": "1YTvM",
+         "id": "kO8sJ",
          "type": "ref",
          "name": "Card 2",
-         "ref": "Phwvy",
+         "ref": "YfVsq",
          "x": 0,
          "y": 0,
          "descendants": {
-          "d6OHI": {
+          "k7zSJ": {
            "content": "Indomie Goreng"
           },
-          "hGXnu": {
+          "msQbJ": {
            "content": "Rp 3.500"
           },
-          "ELzOG": {
+          "IaEPq": {
            "content": "Stok 200"
+          },
+          "iXjkZ": {
+           "fill": {
+            "type": "image",
+            "url": "./assets/indomie.jpg",
+            "mode": "fill"
+           }
           }
          }
         },
         {
-         "id": "mKqco",
+         "id": "Tv9dI",
          "type": "ref",
          "name": "Card 3",
-         "ref": "Phwvy",
+         "ref": "YfVsq",
          "x": 0,
          "y": 0,
          "descendants": {
-          "d6OHI": {
+          "k7zSJ": {
            "content": "Roti Tawar Sari"
           },
-          "hGXnu": {
+          "msQbJ": {
            "content": "Rp 18.000"
           },
-          "ELzOG": {
+          "IaEPq": {
            "content": "Stok 35"
+          },
+          "iXjkZ": {
+           "fill": {
+            "type": "image",
+            "url": "./assets/roti.jpg",
+            "mode": "fill"
+           }
           }
          }
         }
        ]
       },
       {
-       "id": "RPVUI",
+       "id": "AZriJ",
        "type": "frame",
        "name": "GridR3",
        "width": 358,
@@ -1997,40 +2032,54 @@
        "gap": 10,
        "children": [
         {
-         "id": "AGVQV",
+         "id": "oJjko",
          "type": "ref",
          "name": "Card 4",
-         "ref": "Phwvy",
+         "ref": "YfVsq",
          "x": 0,
          "y": 0,
          "descendants": {
-          "d6OHI": {
+          "k7zSJ": {
            "content": "Susu UHT 1L"
           },
-          "hGXnu": {
+          "msQbJ": {
            "content": "Rp 22.000"
           },
-          "ELzOG": {
+          "IaEPq": {
            "content": "Stok 60"
+          },
+          "iXjkZ": {
+           "fill": {
+            "type": "image",
+            "url": "./assets/susu.jpg",
+            "mode": "fill"
+           }
           }
          }
         },
         {
-         "id": "iW2Zl",
+         "id": "Z5wCn",
          "type": "ref",
          "name": "Card 5",
-         "ref": "Phwvy",
+         "ref": "YfVsq",
          "x": 0,
          "y": 0,
          "descendants": {
-          "d6OHI": {
+          "k7zSJ": {
            "content": "Chitato 68g"
           },
-          "hGXnu": {
+          "msQbJ": {
            "content": "Rp 12.000"
           },
-          "ELzOG": {
+          "IaEPq": {
            "content": "Stok 88"
+          },
+          "iXjkZ": {
+           "fill": {
+            "type": "image",
+            "url": "./assets/chitato.jpg",
+            "mode": "fill"
+           }
           }
          }
         }
@@ -2039,7 +2088,7 @@
      ]
     },
     {
-     "id": "uo03N",
+     "id": "NjIpD",
      "type": "frame",
      "name": "CartBar",
      "width": 390,
@@ -2051,7 +2100,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "EggG7",
+       "id": "LlPW3",
        "type": "text",
        "name": "CartSum",
        "content": "2 item  -  Rp 33.500",
@@ -2064,7 +2113,7 @@
        "width": 358
       },
       {
-       "id": "Nd1xF",
+       "id": "ntOsD",
        "type": "text",
        "name": "CartTot",
        "content": "Total   Rp 33.500",
@@ -2077,14 +2126,14 @@
        "width": 358
       },
       {
-       "id": "ru2gs",
+       "id": "jpA73",
        "type": "ref",
        "name": "CTA-Kat",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Lihat Keranjang"
         }
        }
@@ -2092,7 +2141,7 @@
      ]
     },
     {
-     "id": "eMiJT",
+     "id": "UOwLe",
      "type": "frame",
      "name": "TabBar",
      "width": 390,
@@ -2104,7 +2153,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "rplfh",
+       "id": "5MK1q",
        "type": "frame",
        "name": "TbHome",
        "width": 80,
@@ -2116,7 +2165,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "YotW8",
+         "id": "rgtBE",
          "type": "frame",
          "name": "TbHomeIc",
          "width": 28,
@@ -2128,22 +2177,22 @@
          "alignItems": "center",
          "children": [
           {
-           "id": "XOn0Z",
-           "type": "text",
-           "name": "TbHomeIcG",
-           "content": "B",
-           "fill": "$c.onpri",
-           "fontSize": 16,
-           "fontFamily": "Outfit",
-           "textAlign": "center",
-           "fontWeight": "700",
-           "textGrowth": "fixed-width",
-           "width": 20
+           "id": "JwUwn",
+           "type": "rectangle",
+           "name": "TbHomeIcImg",
+           "fill": {
+            "type": "image",
+            "url": "./assets/icons/home-white.png",
+            "mode": "fill"
+           },
+           "width": 16,
+           "height": 16,
+           "cornerRadius": 0
           }
          ]
         },
         {
-         "id": "uPxpy",
+         "id": "6YU7N",
          "type": "text",
          "name": "Tb1",
          "content": "Beranda",
@@ -2158,7 +2207,7 @@
        ]
       },
       {
-       "id": "CJJTm",
+       "id": "MbFpX",
        "type": "frame",
        "name": "TbCart",
        "width": 90,
@@ -2170,7 +2219,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "EtL5G",
+         "id": "32Tw2",
          "type": "frame",
          "name": "TbCartIc",
          "width": 28,
@@ -2182,22 +2231,22 @@
          "alignItems": "center",
          "children": [
           {
-           "id": "RpvmI",
-           "type": "text",
-           "name": "TbCartIcG",
-           "content": "K",
-           "fill": "$c.mfg",
-           "fontSize": 16,
-           "fontFamily": "Outfit",
-           "textAlign": "center",
-           "fontWeight": "700",
-           "textGrowth": "fixed-width",
-           "width": 20
+           "id": "c7aMs",
+           "type": "rectangle",
+           "name": "TbCartIcImg",
+           "fill": {
+            "type": "image",
+            "url": "./assets/icons/shopping-cart-mut.png",
+            "mode": "fill"
+           },
+           "width": 16,
+           "height": 16,
+           "cornerRadius": 0
           }
          ]
         },
         {
-         "id": "mEeas",
+         "id": "9LFFF",
          "type": "text",
          "name": "Tb2",
          "content": "Keranjang (2)",
@@ -2212,7 +2261,7 @@
        ]
       },
       {
-       "id": "vRoaz",
+       "id": "xk4Oi",
        "type": "frame",
        "name": "TbHist",
        "width": 80,
@@ -2224,7 +2273,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "qe6jY",
+         "id": "RpGkQ",
          "type": "frame",
          "name": "TbHistIc",
          "width": 28,
@@ -2236,22 +2285,22 @@
          "alignItems": "center",
          "children": [
           {
-           "id": "cn1Ed",
-           "type": "text",
-           "name": "TbHistIcG",
-           "content": "R",
-           "fill": "$c.mfg",
-           "fontSize": 16,
-           "fontFamily": "Outfit",
-           "textAlign": "center",
-           "fontWeight": "700",
-           "textGrowth": "fixed-width",
-           "width": 20
+           "id": "Nwkml",
+           "type": "rectangle",
+           "name": "TbHistIcImg",
+           "fill": {
+            "type": "image",
+            "url": "./assets/icons/history-mut.png",
+            "mode": "fill"
+           },
+           "width": 16,
+           "height": 16,
+           "cornerRadius": 0
           }
          ]
         },
         {
-         "id": "43NrO",
+         "id": "T9oY4",
          "type": "text",
          "name": "Tb3",
          "content": "Riwayat",
@@ -2266,7 +2315,7 @@
        ]
       },
       {
-       "id": "Vuta9",
+       "id": "oZgsD",
        "type": "frame",
        "name": "TbMore",
        "width": 80,
@@ -2278,7 +2327,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "DaGli",
+         "id": "o8Hdv",
          "type": "frame",
          "name": "TbMoreIc",
          "width": 28,
@@ -2290,22 +2339,22 @@
          "alignItems": "center",
          "children": [
           {
-           "id": "ILUBN",
-           "type": "text",
-           "name": "TbMoreIcG",
-           "content": "L",
-           "fill": "$c.mfg",
-           "fontSize": 16,
-           "fontFamily": "Outfit",
-           "textAlign": "center",
-           "fontWeight": "700",
-           "textGrowth": "fixed-width",
-           "width": 20
+           "id": "PJgPy",
+           "type": "rectangle",
+           "name": "TbMoreIcImg",
+           "fill": {
+            "type": "image",
+            "url": "./assets/icons/settings-mut.png",
+            "mode": "fill"
+           },
+           "width": 16,
+           "height": 16,
+           "cornerRadius": 0
           }
          ]
         },
         {
-         "id": "7eqam",
+         "id": "ke3df",
          "type": "text",
          "name": "Tb4",
          "content": "Lainnya",
@@ -2324,7 +2373,7 @@
    ]
   },
   {
-   "id": "SxycV",
+   "id": "WgINt",
    "type": "frame",
    "name": "06 Detail Produk",
    "width": 390,
@@ -2336,7 +2385,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "oVvvT",
+     "id": "Og50U",
      "type": "frame",
      "name": "Nav det",
      "width": 390,
@@ -2349,7 +2398,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "0bxrC",
+       "id": "LQ7XO",
        "type": "frame",
        "name": "Backdet",
        "width": 36,
@@ -2361,22 +2410,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "k0tLc",
-         "type": "text",
-         "name": "BackdetG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "uqcFl",
+         "type": "rectangle",
+         "name": "BackdetImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "OfeO1",
+       "id": "PKKHY",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -2387,7 +2436,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "zjYfr",
+         "id": "DcNTM",
          "type": "text",
          "name": "Title",
          "content": "Detail Produk",
@@ -2403,7 +2452,7 @@
      ]
     },
     {
-     "id": "64NUB",
+     "id": "Y6l4i",
      "type": "frame",
      "name": "DetBody",
      "width": 390,
@@ -2415,7 +2464,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "ovkLO",
+       "id": "bJH8Q",
        "type": "rectangle",
        "name": "DetImg",
        "fill": "$c.mut",
@@ -2424,7 +2473,7 @@
        "cornerRadius": 16
       },
       {
-       "id": "fEPFs",
+       "id": "rrqCa",
        "type": "text",
        "name": "DetNm",
        "content": "Kopi Tubruk 200g",
@@ -2437,7 +2486,7 @@
        "width": 358
       },
       {
-       "id": "7Qeai",
+       "id": "jNNQB",
        "type": "text",
        "name": "DetCat",
        "content": "Minuman - Stok 42",
@@ -2450,7 +2499,7 @@
        "width": 358
       },
       {
-       "id": "7R42M",
+       "id": "Iizm6",
        "type": "text",
        "name": "DetPr",
        "content": "Rp 28.000",
@@ -2463,7 +2512,7 @@
        "width": 358
       },
       {
-       "id": "f5nvz",
+       "id": "enl86",
        "type": "text",
        "name": "DetDesc",
        "content": "Kopi tubruk asli, sangrai medium, kemasan 200 gram.",
@@ -2476,7 +2525,7 @@
        "width": 358
       },
       {
-       "id": "qGaxJ",
+       "id": "ZeqVu",
        "type": "frame",
        "name": "DetQty",
        "width": 358,
@@ -2491,7 +2540,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "KSUGW",
+         "id": "SmRaB",
          "type": "text",
          "name": "QMin",
          "content": "-",
@@ -2504,7 +2553,7 @@
          "width": 48
         },
         {
-         "id": "owSJR",
+         "id": "4Wqpi",
          "type": "text",
          "name": "QVal",
          "content": "1",
@@ -2517,7 +2566,7 @@
          "width": 60
         },
         {
-         "id": "eDIH3",
+         "id": "zbT68",
          "type": "text",
          "name": "QPlus",
          "content": "+",
@@ -2534,7 +2583,7 @@
      ]
     },
     {
-     "id": "rUF9B",
+     "id": "YnMdP",
      "type": "frame",
      "name": "Foot det",
      "width": 390,
@@ -2546,14 +2595,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "jetXD",
+       "id": "ypYak",
        "type": "ref",
        "name": "CTA det",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Tambah ke Keranjang"
         }
        }
@@ -2563,7 +2612,7 @@
    ]
   },
   {
-   "id": "vq6bK",
+   "id": "0Xaks",
    "type": "frame",
    "name": "07 Keranjang",
    "width": 390,
@@ -2575,7 +2624,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "iIwwL",
+     "id": "LyXN0",
      "type": "frame",
      "name": "Nav cart",
      "width": 390,
@@ -2588,7 +2637,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "Hu0zI",
+       "id": "nfXaS",
        "type": "frame",
        "name": "Backcart",
        "width": 36,
@@ -2600,22 +2649,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "n7GAI",
-         "type": "text",
-         "name": "BackcartG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "qAVLz",
+         "type": "rectangle",
+         "name": "BackcartImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "iC3Wv",
+       "id": "yc4fJ",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -2626,7 +2675,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "92jVA",
+         "id": "v19qc",
          "type": "text",
          "name": "Title",
          "content": "Keranjang - 3 item",
@@ -2638,7 +2687,7 @@
          "textGrowth": "auto"
         },
         {
-         "id": "Spryl",
+         "id": "ByZkG",
          "type": "text",
          "name": "Subtitle",
          "content": "Toko Berkah Jaya",
@@ -2654,7 +2703,7 @@
      ]
     },
     {
-     "id": "DFDvl",
+     "id": "HZRrh",
      "type": "frame",
      "name": "List",
      "width": 390,
@@ -2666,66 +2715,87 @@
      "padding": 16,
      "children": [
       {
-       "id": "4Koub",
+       "id": "hVSi7",
        "type": "ref",
        "name": "Row 0",
-       "ref": "j7GxF",
+       "ref": "CDqun",
        "x": 0,
        "y": 0,
        "descendants": {
-        "Vor3t": {
+        "8XZuF": {
          "content": "Kopi Tubruk 200g"
         },
-        "ISWEz": {
+        "P18OU": {
          "content": "Rp 28.000 /pcs"
         },
-        "vEgO5": {
+        "4ze7t": {
          "content": "Rp 28.000"
+        },
+        "GVhOa": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/kopi.jpg",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "HHJ4C",
+       "id": "BOp87",
        "type": "ref",
        "name": "Row 1",
-       "ref": "j7GxF",
+       "ref": "CDqun",
        "x": 0,
        "y": 0,
        "descendants": {
-        "Vor3t": {
+        "8XZuF": {
          "content": "Indomie Goreng x2"
         },
-        "ISWEz": {
+        "P18OU": {
          "content": "Rp 3.500 /pcs"
         },
-        "vEgO5": {
+        "4ze7t": {
          "content": "Rp 7.000"
+        },
+        "GVhOa": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/indomie.jpg",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "4x3mv",
+       "id": "4buZR",
        "type": "ref",
        "name": "Row 2",
-       "ref": "j7GxF",
+       "ref": "CDqun",
        "x": 0,
        "y": 0,
        "descendants": {
-        "Vor3t": {
+        "8XZuF": {
          "content": "Aqua 600ml"
         },
-        "ISWEz": {
+        "P18OU": {
          "content": "Rp 4.000 /pcs"
         },
-        "vEgO5": {
+        "4ze7t": {
          "content": "Rp 4.000"
+        },
+        "GVhOa": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/aqua.jpg",
+          "mode": "fill"
+         }
         }
        }
       }
      ]
     },
     {
-     "id": "ZBmjK",
+     "id": "nnIq5",
      "type": "frame",
      "name": "PromoW",
      "width": 390,
@@ -2736,7 +2806,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "CjNOK",
+       "id": "FAkfW",
        "type": "frame",
        "name": "Promo",
        "width": 358,
@@ -2750,7 +2820,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "GoI4v",
+         "id": "JlffX",
          "type": "text",
          "name": "PromoTxt",
          "content": "PROMO: HEMAT10 (-10%)",
@@ -2767,7 +2837,7 @@
      ]
     },
     {
-     "id": "AfRhC",
+     "id": "MTWFu",
      "type": "frame",
      "name": "SumW",
      "width": 390,
@@ -2778,7 +2848,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "l9BCd",
+       "id": "MGRli",
        "type": "frame",
        "name": "Summary",
        "width": 358,
@@ -2792,7 +2862,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "JcOie",
+         "id": "l4zqr",
          "type": "text",
          "name": "Sum1",
          "content": "Subtotal   Rp 39.000",
@@ -2805,7 +2875,7 @@
          "width": 326
         },
         {
-         "id": "aYq1Y",
+         "id": "nueB6",
          "type": "text",
          "name": "Sum2",
          "content": "Promo HEMAT10   -Rp 3.900",
@@ -2818,7 +2888,7 @@
          "width": 326
         },
         {
-         "id": "tJzZ4",
+         "id": "2MX73",
          "type": "text",
          "name": "Sum3",
          "content": "Pajak 10%   Rp 3.510",
@@ -2831,7 +2901,7 @@
          "width": 326
         },
         {
-         "id": "e8EOZ",
+         "id": "2AIYZ",
          "type": "text",
          "name": "Sum4",
          "content": "Total   Rp 38.610",
@@ -2848,7 +2918,7 @@
      ]
     },
     {
-     "id": "uX9RI",
+     "id": "igAan",
      "type": "frame",
      "name": "Foot cart",
      "width": 390,
@@ -2860,14 +2930,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "RbkLo",
+       "id": "5q5n3",
        "type": "ref",
        "name": "CTA cart",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Lanjut ke Pembayaran"
         }
        }
@@ -2877,7 +2947,7 @@
    ]
   },
   {
-   "id": "7X0bm",
+   "id": "kYaVe",
    "type": "frame",
    "name": "08 Pelanggan",
    "width": 390,
@@ -2889,7 +2959,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "4Hvuz",
+     "id": "4MLYL",
      "type": "frame",
      "name": "Nav cust",
      "width": 390,
@@ -2902,7 +2972,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "rnlZr",
+       "id": "dgP7Y",
        "type": "frame",
        "name": "Backcust",
        "width": 36,
@@ -2914,22 +2984,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "DKipN",
-         "type": "text",
-         "name": "BackcustG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "VfgTG",
+         "type": "rectangle",
+         "name": "BackcustImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "sGCUr",
+       "id": "hrD53",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -2940,7 +3010,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "ZOPhE",
+         "id": "IVoqx",
          "type": "text",
          "name": "Title",
          "content": "Pilih Pelanggan",
@@ -2956,7 +3026,7 @@
      ]
     },
     {
-     "id": "Equk4",
+     "id": "f1dAT",
      "type": "frame",
      "name": "CustSearchW",
      "width": 390,
@@ -2967,7 +3037,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "CYvt6",
+       "id": "dPseZ",
        "type": "frame",
        "name": "CustSearch",
        "width": 358,
@@ -2979,7 +3049,7 @@
        "padding": 14,
        "children": [
         {
-         "id": "aPOHh",
+         "id": "hcs7u",
          "type": "text",
          "name": "CustHint",
          "content": "Cari nama / nomor HP...",
@@ -2996,7 +3066,7 @@
      ]
     },
     {
-     "id": "zU0uU",
+     "id": "aPhFO",
      "type": "frame",
      "name": "CustBody",
      "width": 390,
@@ -3008,74 +3078,109 @@
      "padding": 16,
      "children": [
       {
-       "id": "XCxul",
+       "id": "ImSKC",
        "type": "ref",
        "name": "Cu-Umum",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Pelanggan Umum"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/user-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "yNQOR",
+       "id": "DKplJ",
        "type": "ref",
        "name": "Cu-Budi",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Budi (0812-111)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/user-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "rlL5y",
+       "id": "L3fKm",
        "type": "ref",
        "name": "Cu-Sari",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Sari (0813-222)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/user-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "sWFn7",
+       "id": "DinXG",
        "type": "ref",
        "name": "Cu-Agung",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Agung (0819-333)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/user-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "5zPu1",
+       "id": "zuvbH",
        "type": "ref",
        "name": "Cu-Plus",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "+ Tambah Pelanggan"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/plus-mut.png",
+          "mode": "fill"
+         }
         }
        }
       }
      ]
     },
     {
-     "id": "AEGLm",
+     "id": "k1qtV",
      "type": "frame",
      "name": "Foot cust",
      "width": 390,
@@ -3087,14 +3192,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "JaRVM",
+       "id": "H3NXT",
        "type": "ref",
        "name": "CTA cust",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Lanjut Tanpa Member"
         }
        }
@@ -3104,7 +3209,7 @@
    ]
   },
   {
-   "id": "bxz3P",
+   "id": "MQCQ8",
    "type": "frame",
    "name": "09 Bayar Tunai",
    "width": 390,
@@ -3116,7 +3221,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "Nff74",
+     "id": "GRn0S",
      "type": "frame",
      "name": "Nav pay",
      "width": 390,
@@ -3129,7 +3234,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "mGHNN",
+       "id": "CDcNO",
        "type": "frame",
        "name": "Backpay",
        "width": 36,
@@ -3141,22 +3246,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "tiVmL",
-         "type": "text",
-         "name": "BackpayG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "22P2N",
+         "type": "rectangle",
+         "name": "BackpayImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "jrEIA",
+       "id": "js2Xk",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -3167,7 +3272,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "cdRSz",
+         "id": "yseWf",
          "type": "text",
          "name": "Title",
          "content": "Pembayaran",
@@ -3183,7 +3288,7 @@
      ]
     },
     {
-     "id": "7xtMn",
+     "id": "NeWOe",
      "type": "frame",
      "name": "TotalW",
      "width": 390,
@@ -3194,7 +3299,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "hiRyC",
+       "id": "dWgbh",
        "type": "frame",
        "name": "TotalCard",
        "width": 358,
@@ -3207,7 +3312,7 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "BXJns",
+         "id": "mlzz5",
          "type": "text",
          "name": "TotLbl",
          "content": "TOTAL TAGIHAN",
@@ -3220,7 +3325,7 @@
          "width": 326
         },
         {
-         "id": "b5S55",
+         "id": "ejMcC",
          "type": "text",
          "name": "TotVal",
          "content": "Rp 38.610",
@@ -3237,7 +3342,7 @@
      ]
     },
     {
-     "id": "Ki0w3",
+     "id": "xAErY",
      "type": "frame",
      "name": "Lbl pay1",
      "width": 390,
@@ -3249,7 +3354,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "rWmh2",
+       "id": "grjUH",
        "type": "text",
        "name": "LblTxt",
        "content": "METODE PEMBAYARAN",
@@ -3264,7 +3369,7 @@
      ]
     },
     {
-     "id": "nTZgc",
+     "id": "tPrcX",
      "type": "frame",
      "name": "Methods",
      "width": 390,
@@ -3277,7 +3382,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "YLZrX",
+       "id": "engSO",
        "type": "frame",
        "name": "TileRow0",
        "width": 358,
@@ -3288,27 +3393,27 @@
        "gap": 10,
        "children": [
         {
-         "id": "L75KZ",
+         "id": "Mw41J",
          "type": "ref",
          "name": "Tile Tunai",
-         "ref": "gQyHD",
+         "ref": "KqrBS",
          "x": 0,
          "y": 0,
          "descendants": {
-          "PVO94": {
+          "TW7md": {
            "content": "Tunai"
           }
          }
         },
         {
-         "id": "SPQWx",
+         "id": "A96Tm",
          "type": "ref",
          "name": "Tile QRIS",
-         "ref": "gQyHD",
+         "ref": "KqrBS",
          "x": 0,
          "y": 0,
          "descendants": {
-          "PVO94": {
+          "TW7md": {
            "content": "QRIS"
           }
          }
@@ -3316,7 +3421,7 @@
        ]
       },
       {
-       "id": "05AUc",
+       "id": "NZEXW",
        "type": "frame",
        "name": "TileRow1",
        "width": 358,
@@ -3327,27 +3432,27 @@
        "gap": 10,
        "children": [
         {
-         "id": "58KqZ",
+         "id": "jPHQ5",
          "type": "ref",
          "name": "Tile Debit",
-         "ref": "gQyHD",
+         "ref": "KqrBS",
          "x": 0,
          "y": 0,
          "descendants": {
-          "PVO94": {
+          "TW7md": {
            "content": "Debit"
           }
          }
         },
         {
-         "id": "72GFj",
+         "id": "Iixmo",
          "type": "ref",
          "name": "Tile E-Wallet",
-         "ref": "gQyHD",
+         "ref": "KqrBS",
          "x": 0,
          "y": 0,
          "descendants": {
-          "PVO94": {
+          "TW7md": {
            "content": "E-Wallet"
           }
          }
@@ -3357,7 +3462,7 @@
      ]
     },
     {
-     "id": "xx9Kv",
+     "id": "jY2Gs",
      "type": "frame",
      "name": "Lbl pay2",
      "width": 390,
@@ -3369,7 +3474,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "yPd8b",
+       "id": "uX1Lr",
        "type": "text",
        "name": "LblTxt",
        "content": "UANG DITERIMA",
@@ -3384,7 +3489,7 @@
      ]
     },
     {
-     "id": "cJJf2",
+     "id": "sT3yf",
      "type": "frame",
      "name": "DenomW",
      "width": 390,
@@ -3395,7 +3500,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "z7YTj",
+       "id": "eMFlz",
        "type": "frame",
        "name": "Denom",
        "width": 358,
@@ -3410,7 +3515,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "ldxaE",
+         "id": "xCuld",
          "type": "text",
          "name": "Dn1",
          "content": "Rp 40 rb",
@@ -3423,7 +3528,7 @@
          "width": 100
         },
         {
-         "id": "sctpU",
+         "id": "v49Nz",
          "type": "text",
          "name": "Dn2",
          "content": "Rp 50 rb",
@@ -3436,7 +3541,7 @@
          "width": 100
         },
         {
-         "id": "yMB3n",
+         "id": "WyEaU",
          "type": "text",
          "name": "Dn3",
          "content": "Rp 100 rb",
@@ -3453,7 +3558,7 @@
      ]
     },
     {
-     "id": "olfvk",
+     "id": "RO3Mo",
      "type": "frame",
      "name": "ChgW",
      "width": 390,
@@ -3464,7 +3569,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "T1Tk3",
+       "id": "XiPrx",
        "type": "frame",
        "name": "Change",
        "width": 358,
@@ -3477,7 +3582,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "l2ddN",
+         "id": "0PG6R",
          "type": "text",
          "name": "ChgTxt",
          "content": "Kembalian  Rp 11.390",
@@ -3494,7 +3599,7 @@
      ]
     },
     {
-     "id": "0upRi",
+     "id": "IZ3O2",
      "type": "frame",
      "name": "Foot pay",
      "width": 390,
@@ -3506,14 +3611,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "NjCEU",
+       "id": "4G8gc",
        "type": "ref",
        "name": "CTA pay",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Selesaikan Transaksi"
         }
        }
@@ -3523,7 +3628,7 @@
    ]
   },
   {
-   "id": "G63K1",
+   "id": "QOF0P",
    "type": "frame",
    "name": "10 Bayar QRIS",
    "width": 390,
@@ -3535,7 +3640,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "JPl5H",
+     "id": "aDPLG",
      "type": "frame",
      "name": "Nav qris",
      "width": 390,
@@ -3548,7 +3653,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "KggWX",
+       "id": "ZsLUz",
        "type": "frame",
        "name": "Backqris",
        "width": 36,
@@ -3560,22 +3665,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "IY3DZ",
-         "type": "text",
-         "name": "BackqrisG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "FWebx",
+         "type": "rectangle",
+         "name": "BackqrisImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "2cMfa",
+       "id": "Vbo7x",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -3586,7 +3691,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "hR1vp",
+         "id": "9iGox",
          "type": "text",
          "name": "Title",
          "content": "Pembayaran QRIS",
@@ -3602,7 +3707,7 @@
      ]
     },
     {
-     "id": "WQqk7",
+     "id": "MxhcW",
      "type": "frame",
      "name": "QrisBody",
      "width": 390,
@@ -3615,7 +3720,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "AX6xd",
+       "id": "OVsDe",
        "type": "text",
        "name": "QrisTot",
        "content": "Total  Rp 38.610",
@@ -3628,7 +3733,7 @@
        "width": 358
       },
       {
-       "id": "gtI1y",
+       "id": "VnVkq",
        "type": "frame",
        "name": "QrBox",
        "width": 260,
@@ -3642,10 +3747,14 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "DCgMI",
+         "id": "g2yjP",
          "type": "rectangle",
-         "name": "QrFake",
-         "fill": "$c.fg",
+         "name": "QrImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/qr-code-mut.png",
+          "mode": "fill"
+         },
          "width": 200,
          "height": 200,
          "cornerRadius": 8
@@ -3653,7 +3762,7 @@
        ]
       },
       {
-       "id": "yZdin",
+       "id": "JBQCo",
        "type": "text",
        "name": "QrisHint",
        "content": "Scan kode di atas dengan e-wallet / m-banking",
@@ -3666,7 +3775,7 @@
        "width": 340
       },
       {
-       "id": "jSWLp",
+       "id": "pIMvR",
        "type": "text",
        "name": "QrisTimer",
        "content": "Berlaku 04:59",
@@ -3679,7 +3788,7 @@
        "width": 340
       },
       {
-       "id": "uFwNo",
+       "id": "GJ4ZX",
        "type": "frame",
        "name": "QrisStat",
        "width": 358,
@@ -3690,7 +3799,7 @@
        "justifyContent": "center",
        "children": [
         {
-         "id": "Tv3w7",
+         "id": "v76wV",
          "type": "text",
          "name": "QrisStatTxt",
          "content": "Menunggu pembayaran...",
@@ -3707,7 +3816,7 @@
      ]
     },
     {
-     "id": "GCTnF",
+     "id": "xq2Fc",
      "type": "frame",
      "name": "Foot qris",
      "width": 390,
@@ -3719,14 +3828,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "Z33Ha",
+       "id": "Yj6Gy",
        "type": "ref",
        "name": "CTA qris",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Saya Sudah Bayar"
         }
        }
@@ -3736,7 +3845,7 @@
    ]
   },
   {
-   "id": "fdXrC",
+   "id": "VDJBn",
    "type": "frame",
    "name": "11 Sukses",
    "width": 390,
@@ -3748,7 +3857,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "pf1Uj",
+     "id": "YIZV8",
      "type": "frame",
      "name": "Status ok",
      "width": 390,
@@ -3761,7 +3870,7 @@
      "padding": 20,
      "children": [
       {
-       "id": "3imBW",
+       "id": "qN34k",
        "type": "text",
        "name": "Clock",
        "content": "09.41",
@@ -3775,7 +3884,7 @@
      ]
     },
     {
-     "id": "sf8p4",
+     "id": "IhOV1",
      "type": "frame",
      "name": "Hero",
      "width": 390,
@@ -3788,7 +3897,7 @@
      "padding": 28,
      "children": [
       {
-       "id": "eFK4u",
+       "id": "uGKT5",
        "type": "frame",
        "name": "Check",
        "width": 88,
@@ -3800,22 +3909,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "BrZwb",
-         "type": "text",
-         "name": "CheckG",
-         "content": "V",
-         "fill": "$c.ok",
-         "fontSize": 40,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 80
+         "id": "a6Eo3",
+         "type": "rectangle",
+         "name": "CheckImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/check-green.png",
+          "mode": "fill"
+         },
+         "width": 76,
+         "height": 76,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "7ALWW",
+       "id": "OADiW",
        "type": "text",
        "name": "OkTitle",
        "content": "Pembayaran Berhasil",
@@ -3828,7 +3937,7 @@
        "width": 320
       },
       {
-       "id": "cJDim",
+       "id": "jhjH4",
        "type": "text",
        "name": "OkSub",
        "content": "Order #129 - Tunai - 09.42 WIB",
@@ -3843,7 +3952,7 @@
      ]
     },
     {
-     "id": "i1td6",
+     "id": "ZLJ8c",
      "type": "frame",
      "name": "StrukW",
      "width": 390,
@@ -3854,7 +3963,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "BGsJX",
+       "id": "CUNp3",
        "type": "frame",
        "name": "Struk",
        "width": 342,
@@ -3868,7 +3977,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "2jC00",
+         "id": "y0S0b",
          "type": "text",
          "name": "SH",
          "content": "TOKO BERKAH JAYA",
@@ -3881,7 +3990,7 @@
          "width": 310
         },
         {
-         "id": "sPvfy",
+         "id": "xvqcD",
          "type": "text",
          "name": "SA",
          "content": "Jl. Merdeka No.12 - 0812-3456-7890",
@@ -3894,7 +4003,7 @@
          "width": 310
         },
         {
-         "id": "4w1rR",
+         "id": "FEuNw",
          "type": "text",
          "name": "SI1",
          "content": "Kopi Tubruk x1   28.000",
@@ -3907,7 +4016,7 @@
          "width": 310
         },
         {
-         "id": "cEQcP",
+         "id": "O0eCV",
          "type": "text",
          "name": "SI2",
          "content": "Indomie Goreng x2   7.000",
@@ -3920,7 +4029,7 @@
          "width": 310
         },
         {
-         "id": "WT2dY",
+         "id": "X2MqZ",
          "type": "text",
          "name": "SI3",
          "content": "Aqua 600ml x1   4.000",
@@ -3933,7 +4042,7 @@
          "width": 310
         },
         {
-         "id": "SSt6e",
+         "id": "dHTq0",
          "type": "text",
          "name": "SI4",
          "content": "Subtotal   39.000",
@@ -3946,7 +4055,7 @@
          "width": 310
         },
         {
-         "id": "3JCbF",
+         "id": "PwtoJ",
          "type": "text",
          "name": "SI5",
          "content": "Promo HEMAT10   -3.900",
@@ -3959,7 +4068,7 @@
          "width": 310
         },
         {
-         "id": "u8Cqj",
+         "id": "SZIwf",
          "type": "text",
          "name": "SI6",
          "content": "Pajak 10%   3.510",
@@ -3972,7 +4081,7 @@
          "width": 310
         },
         {
-         "id": "rciGm",
+         "id": "qVYH5",
          "type": "text",
          "name": "SI7",
          "content": "Total   Rp 38.610",
@@ -3985,7 +4094,7 @@
          "width": 310
         },
         {
-         "id": "LrGkn",
+         "id": "GPACQ",
          "type": "text",
          "name": "SI8",
          "content": "Tunai 50.000 - Kembali 11.390",
@@ -4002,7 +4111,7 @@
      ]
     },
     {
-     "id": "FMgBP",
+     "id": "SGSld",
      "type": "frame",
      "name": "FootOk",
      "width": 390,
@@ -4016,7 +4125,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "CV6SC",
+       "id": "MqJAa",
        "type": "frame",
        "name": "Ghost",
        "width": 358,
@@ -4030,7 +4139,7 @@
        "strokeWidth": 2,
        "children": [
         {
-         "id": "not9V",
+         "id": "o1Yah",
          "type": "text",
          "name": "GhostLbl",
          "content": "Cetak Struk",
@@ -4045,14 +4154,14 @@
        ]
       },
       {
-       "id": "H9EKl",
+       "id": "L5lwT",
        "type": "ref",
        "name": "CTA-Baru",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Transaksi Baru +"
         }
        }
@@ -4062,7 +4171,7 @@
    ]
   },
   {
-   "id": "QkbZl",
+   "id": "AeJkT",
    "type": "frame",
    "name": "12 Struk Nota",
    "width": 390,
@@ -4074,7 +4183,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "fYrCd",
+     "id": "9e2eV",
      "type": "frame",
      "name": "Nav nota",
      "width": 390,
@@ -4087,7 +4196,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "zYUW2",
+       "id": "wG1me",
        "type": "frame",
        "name": "Backnota",
        "width": 36,
@@ -4099,22 +4208,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "BJT3S",
-         "type": "text",
-         "name": "BacknotaG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "iCIpY",
+         "type": "rectangle",
+         "name": "BacknotaImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "4uKJi",
+       "id": "M6EkX",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -4125,7 +4234,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "Q62iI",
+         "id": "G001p",
          "type": "text",
          "name": "Title",
          "content": "Struk #129",
@@ -4137,7 +4246,7 @@
          "textGrowth": "auto"
         },
         {
-         "id": "ABUTS",
+         "id": "3SgTs",
          "type": "text",
          "name": "Subtitle",
          "content": "09.42 - Tunai - Andi",
@@ -4153,7 +4262,7 @@
      ]
     },
     {
-     "id": "3sjhC",
+     "id": "aDEBe",
      "type": "frame",
      "name": "NotaW",
      "width": 390,
@@ -4165,7 +4274,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "3Pm5g",
+       "id": "S4Wwn",
        "type": "frame",
        "name": "Nota",
        "width": 342,
@@ -4179,7 +4288,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "v1kRS",
+         "id": "JkGxH",
          "type": "text",
          "name": "NH",
          "content": "TOKO BERKAH JAYA",
@@ -4192,7 +4301,7 @@
          "width": 310
         },
         {
-         "id": "bZxUy",
+         "id": "07618",
          "type": "text",
          "name": "NA",
          "content": "Jl. Merdeka No.12",
@@ -4205,7 +4314,7 @@
          "width": 310
         },
         {
-         "id": "VNUtZ",
+         "id": "xPPpQ",
          "type": "text",
          "name": "NID",
          "content": "#129 / 24-09-2026 09:42",
@@ -4218,7 +4327,7 @@
          "width": 310
         },
         {
-         "id": "YplAG",
+         "id": "GhuHP",
          "type": "text",
          "name": "NDiv",
          "content": "- - - - - - - - - - - - - - -",
@@ -4231,7 +4340,7 @@
          "width": 310
         },
         {
-         "id": "UxUpx",
+         "id": "Jh7iw",
          "type": "text",
          "name": "NI1",
          "content": "Kopi Tubruk 200g",
@@ -4244,7 +4353,7 @@
          "width": 310
         },
         {
-         "id": "5RAS1",
+         "id": "vxhwi",
          "type": "text",
          "name": "NI1b",
          "content": "1 x 28.000           28.000",
@@ -4257,7 +4366,7 @@
          "width": 310
         },
         {
-         "id": "c61Gc",
+         "id": "lsBsX",
          "type": "text",
          "name": "NI2",
          "content": "Indomie Goreng",
@@ -4270,7 +4379,7 @@
          "width": 310
         },
         {
-         "id": "g8hAO",
+         "id": "7aMHi",
          "type": "text",
          "name": "NI2b",
          "content": "2 x 3.500              7.000",
@@ -4283,7 +4392,7 @@
          "width": 310
         },
         {
-         "id": "WLANK",
+         "id": "CxLAC",
          "type": "text",
          "name": "NI3",
          "content": "Aqua 600ml",
@@ -4296,7 +4405,7 @@
          "width": 310
         },
         {
-         "id": "ghpKV",
+         "id": "jjdH2",
          "type": "text",
          "name": "NI3b",
          "content": "1 x 4.000              4.000",
@@ -4309,7 +4418,7 @@
          "width": 310
         },
         {
-         "id": "dtMlv",
+         "id": "Cfwj7",
          "type": "text",
          "name": "NDiv2",
          "content": "- - - - - - - - - - - - - - -",
@@ -4322,7 +4431,7 @@
          "width": 310
         },
         {
-         "id": "0nelO",
+         "id": "RV8vP",
          "type": "text",
          "name": "NT",
          "content": "TOTAL   Rp 38.610",
@@ -4335,7 +4444,7 @@
          "width": 310
         },
         {
-         "id": "VgZCa",
+         "id": "IUJFg",
          "type": "text",
          "name": "NT2",
          "content": "TUNAI 50.000 - KEMBALI 11.390",
@@ -4348,7 +4457,7 @@
          "width": 310
         },
         {
-         "id": "0q521",
+         "id": "9LosB",
          "type": "text",
          "name": "NThx",
          "content": "Terima kasih!",
@@ -4365,7 +4474,7 @@
      ]
     },
     {
-     "id": "zH47V",
+     "id": "EZnD5",
      "type": "frame",
      "name": "FootNota",
      "width": 390,
@@ -4377,14 +4486,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "xjmC5",
+       "id": "I4Jbd",
        "type": "ref",
        "name": "CTA-Share",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Bagikan via WA"
         }
        }
@@ -4394,7 +4503,7 @@
    ]
   },
   {
-   "id": "EBUpk",
+   "id": "GU7UQ",
    "type": "frame",
    "name": "13 Riwayat",
    "width": 390,
@@ -4406,7 +4515,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "ah1xZ",
+     "id": "k0GIw",
      "type": "frame",
      "name": "Nav hist",
      "width": 390,
@@ -4419,7 +4528,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "Zq7kd",
+       "id": "uSKTS",
        "type": "frame",
        "name": "Backhist",
        "width": 36,
@@ -4431,22 +4540,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "jQJEH",
-         "type": "text",
-         "name": "BackhistG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "VR2BE",
+         "type": "rectangle",
+         "name": "BackhistImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "V4rJQ",
+       "id": "Whw0W",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -4457,7 +4566,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "eNp94",
+         "id": "smclI",
          "type": "text",
          "name": "Title",
          "content": "Riwayat Transaksi",
@@ -4469,7 +4578,7 @@
          "textGrowth": "auto"
         },
         {
-         "id": "tTDFN",
+         "id": "EzwfW",
          "type": "text",
          "name": "Subtitle",
          "content": "24 Sep 2026",
@@ -4485,7 +4594,7 @@
      ]
     },
     {
-     "id": "OKCLH",
+     "id": "rwlh0",
      "type": "frame",
      "name": "HistFilterW",
      "width": 390,
@@ -4496,7 +4605,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "Yk5l5",
+       "id": "ywLpF",
        "type": "frame",
        "name": "HistFilter",
        "width": 358,
@@ -4511,7 +4620,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "cLyUJ",
+         "id": "rcLFh",
          "type": "text",
          "name": "HF1",
          "content": "Hari Ini",
@@ -4524,7 +4633,7 @@
          "width": 100
         },
         {
-         "id": "sCGYU",
+         "id": "VmbFN",
          "type": "text",
          "name": "HF2",
          "content": "Kemarin",
@@ -4537,7 +4646,7 @@
          "width": 100
         },
         {
-         "id": "AmSpU",
+         "id": "1n5zL",
          "type": "text",
          "name": "HF3",
          "content": "7 Hari",
@@ -4554,7 +4663,7 @@
      ]
     },
     {
-     "id": "8afA9",
+     "id": "La496",
      "type": "frame",
      "name": "HistBody",
      "width": 390,
@@ -4566,72 +4675,107 @@
      "padding": 16,
      "children": [
       {
-       "id": "UhYl7",
+       "id": "eI6zr",
        "type": "ref",
        "name": "H-129",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "#129 - Rp 38.610"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/receipt-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "57sAs",
+       "id": "fTXmf",
        "type": "ref",
        "name": "H-128",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "#128 - Rp 52.000"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/receipt-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "t1Eqp",
+       "id": "F2S9V",
        "type": "ref",
        "name": "H-127",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "#127 - Rp 15.500"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/receipt-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "7BFXB",
+       "id": "BuHyo",
        "type": "ref",
        "name": "H-126",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "#126 - Rp 120.000"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/receipt-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "vIpsm",
+       "id": "iRYNw",
        "type": "ref",
        "name": "H-125",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "#125 - Rp 8.000"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/receipt-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "dAIFH",
+       "id": "y14MY",
        "type": "frame",
        "name": "HistSum",
        "width": 358,
@@ -4642,7 +4786,7 @@
        "justifyContent": "center",
        "children": [
         {
-         "id": "ZAQWv",
+         "id": "q5NWy",
          "type": "text",
          "name": "HistSumTxt",
          "content": "128 transaksi - Rp 4.215.000",
@@ -4661,7 +4805,7 @@
    ]
   },
   {
-   "id": "ffkDf",
+   "id": "eiuV3",
    "type": "frame",
    "name": "14 Detail Trx",
    "width": 390,
@@ -4673,7 +4817,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "MO4ti",
+     "id": "apJEi",
      "type": "frame",
      "name": "Nav dtrx",
      "width": 390,
@@ -4686,7 +4830,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "N5BVX",
+       "id": "A9BK9",
        "type": "frame",
        "name": "Backdtrx",
        "width": 36,
@@ -4698,22 +4842,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "2rwhg",
-         "type": "text",
-         "name": "BackdtrxG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "pxo96",
+         "type": "rectangle",
+         "name": "BackdtrxImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "Xjjdo",
+       "id": "HDhe5",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -4724,7 +4868,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "oLsC7",
+         "id": "bLfzP",
          "type": "text",
          "name": "Title",
          "content": "Transaksi #128",
@@ -4736,7 +4880,7 @@
          "textGrowth": "auto"
         },
         {
-         "id": "LorP4",
+         "id": "n68o8",
          "type": "text",
          "name": "Subtitle",
          "content": "Tunai - 08.15 - Sari",
@@ -4752,7 +4896,7 @@
      ]
     },
     {
-     "id": "uqUqq",
+     "id": "GpbIf",
      "type": "frame",
      "name": "DtrxBody",
      "width": 390,
@@ -4764,7 +4908,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "aHSzW",
+       "id": "ngsxX",
        "type": "frame",
        "name": "DtrxCard",
        "width": 358,
@@ -4778,7 +4922,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "Ucltz",
+         "id": "3vX22",
          "type": "text",
          "name": "DT1",
          "content": "Indomie Goreng x4   14.000",
@@ -4791,7 +4935,7 @@
          "width": 326
         },
         {
-         "id": "rjUkf",
+         "id": "sykQf",
          "type": "text",
          "name": "DT2",
          "content": "Beras 5kg x1   68.500",
@@ -4804,7 +4948,7 @@
          "width": 326
         },
         {
-         "id": "ThSww",
+         "id": "41kUD",
          "type": "text",
          "name": "DT3",
          "content": "Subtotal   82.500",
@@ -4817,7 +4961,7 @@
          "width": 326
         },
         {
-         "id": "jbTbn",
+         "id": "CIMap",
          "type": "text",
          "name": "DT4",
          "content": "Pajak 10%   8.250",
@@ -4830,7 +4974,7 @@
          "width": 326
         },
         {
-         "id": "zwTRy",
+         "id": "5sN2U",
          "type": "text",
          "name": "DT5",
          "content": "Total   Rp 90.750",
@@ -4843,7 +4987,7 @@
          "width": 326
         },
         {
-         "id": "UtQpw",
+         "id": "UaJ7T",
          "type": "text",
          "name": "DT6",
          "content": "Tunai 100.000 - Kembali 9.250",
@@ -4858,7 +5002,7 @@
        ]
       },
       {
-       "id": "pLVwX",
+       "id": "cND01",
        "type": "frame",
        "name": "ReturBox",
        "width": 358,
@@ -4871,7 +5015,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "54uHc",
+         "id": "FKsVl",
          "type": "text",
          "name": "ReturTxt",
          "content": "Retur / Refund butuh PIN supervisor",
@@ -4888,7 +5032,7 @@
      ]
     },
     {
-     "id": "32xcQ",
+     "id": "4bynV",
      "type": "frame",
      "name": "FootDtrx",
      "width": 390,
@@ -4901,7 +5045,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "BySxM",
+       "id": "f27aA",
        "type": "frame",
        "name": "GhostR",
        "width": 358,
@@ -4915,7 +5059,7 @@
        "strokeWidth": 2,
        "children": [
         {
-         "id": "BTgrp",
+         "id": "ZV3NT",
          "type": "text",
          "name": "GhostRLbl",
          "content": "Cetak Ulang",
@@ -4930,14 +5074,14 @@
        ]
       },
       {
-       "id": "paqyr",
+       "id": "llvM2",
        "type": "ref",
        "name": "CTA-Retur",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Proses Retur"
         }
        }
@@ -4947,7 +5091,7 @@
    ]
   },
   {
-   "id": "ND9AI",
+   "id": "8m31g",
    "type": "frame",
    "name": "15 Tutup Shift",
    "width": 390,
@@ -4959,7 +5103,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "o3C4e",
+     "id": "pqFhT",
      "type": "frame",
      "name": "Nav close",
      "width": 390,
@@ -4972,7 +5116,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "vMekG",
+       "id": "zF43Z",
        "type": "frame",
        "name": "Backclose",
        "width": 36,
@@ -4984,22 +5128,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "XllQD",
-         "type": "text",
-         "name": "BackcloseG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "lX1ch",
+         "type": "rectangle",
+         "name": "BackcloseImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "9TCf3",
+       "id": "qfaj9",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -5010,7 +5154,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "LvZQZ",
+         "id": "gj5Vn",
          "type": "text",
          "name": "Title",
          "content": "Tutup Shift Pagi",
@@ -5026,7 +5170,7 @@
      ]
     },
     {
-     "id": "lEv8E",
+     "id": "FF7Bs",
      "type": "frame",
      "name": "CloseBody",
      "width": 390,
@@ -5038,23 +5182,23 @@
      "padding": 16,
      "children": [
       {
-       "id": "P1Cr5",
+       "id": "OXm5m",
        "type": "ref",
        "name": "C-Omzet",
-       "ref": "WdWJD",
+       "ref": "gwYRL",
        "x": 0,
        "y": 0,
        "descendants": {
-        "RWYlQ": {
+        "tntGw": {
          "content": "Total omzet"
         },
-        "fJaw1": {
+        "FnMMs": {
          "content": "Rp 4.215.000"
         }
        }
       },
       {
-       "id": "e2Piy",
+       "id": "qggx6",
        "type": "frame",
        "name": "CloseRow",
        "width": 358,
@@ -5065,33 +5209,33 @@
        "gap": 16,
        "children": [
         {
-         "id": "6EDhF",
+         "id": "co2Ai",
          "type": "ref",
          "name": "C-Trx",
-         "ref": "WdWJD",
+         "ref": "gwYRL",
          "x": 0,
          "y": 0,
          "descendants": {
-          "RWYlQ": {
+          "tntGw": {
            "content": "Transaksi"
           },
-          "fJaw1": {
+          "FnMMs": {
            "content": "128"
           }
          }
         },
         {
-         "id": "WKeKL",
+         "id": "yDkx6",
          "type": "ref",
          "name": "C-Retur",
-         "ref": "WdWJD",
+         "ref": "gwYRL",
          "x": 0,
          "y": 0,
          "descendants": {
-          "RWYlQ": {
+          "tntGw": {
            "content": "Retur"
           },
-          "fJaw1": {
+          "FnMMs": {
            "content": "2"
           }
          }
@@ -5099,23 +5243,23 @@
        ]
       },
       {
-       "id": "OApad",
+       "id": "ryReQ",
        "type": "ref",
        "name": "F-Count",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Hitung kas fisik (Rp)"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "4.715.000"
         }
        }
       },
       {
-       "id": "wSacP",
+       "id": "oyXFL",
        "type": "frame",
        "name": "CloseDiff",
        "width": 358,
@@ -5128,7 +5272,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "7ZYh9",
+         "id": "iTc6u",
          "type": "text",
          "name": "CloseDiffTxt",
          "content": "Selisih +0 (pas)",
@@ -5145,7 +5289,7 @@
      ]
     },
     {
-     "id": "vMgGu",
+     "id": "rawLA",
      "type": "frame",
      "name": "Foot close",
      "width": 390,
@@ -5157,14 +5301,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "Jmcc3",
+       "id": "1hADs",
        "type": "ref",
        "name": "CTA close",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Tutup & Cetak Laporan"
         }
        }
@@ -5174,7 +5318,7 @@
    ]
   },
   {
-   "id": "TxXs1",
+   "id": "z54cd",
    "type": "frame",
    "name": "16 Stok",
    "width": 390,
@@ -5186,7 +5330,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "E6uKA",
+     "id": "5Bxe8",
      "type": "frame",
      "name": "Nav stok",
      "width": 390,
@@ -5199,7 +5343,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "cckV3",
+       "id": "6BWrw",
        "type": "frame",
        "name": "Backstok",
        "width": 36,
@@ -5211,22 +5355,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "Hdnsc",
-         "type": "text",
-         "name": "BackstokG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "93gj5",
+         "type": "rectangle",
+         "name": "BackstokImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "7ZZu2",
+       "id": "KTe1p",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -5237,7 +5381,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "UMqM3",
+         "id": "Dbm5V",
          "type": "text",
          "name": "Title",
          "content": "Stok Produk",
@@ -5249,7 +5393,7 @@
          "textGrowth": "auto"
         },
         {
-         "id": "83Gb5",
+         "id": "dUp3A",
          "type": "text",
          "name": "Subtitle",
          "content": "6 menipis",
@@ -5265,7 +5409,7 @@
      ]
     },
     {
-     "id": "yH3Oq",
+     "id": "qKqt6",
      "type": "frame",
      "name": "StokSearchW",
      "width": 390,
@@ -5276,7 +5420,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "5BIYA",
+       "id": "ffN5O",
        "type": "frame",
        "name": "StokSearch",
        "width": 358,
@@ -5288,7 +5432,7 @@
        "padding": 14,
        "children": [
         {
-         "id": "BkZh3",
+         "id": "QOa3z",
          "type": "text",
          "name": "StokHint",
          "content": "Cari produk...",
@@ -5305,7 +5449,7 @@
      ]
     },
     {
-     "id": "Dc8GZ",
+     "id": "hHciR",
      "type": "frame",
      "name": "StokBody",
      "width": 390,
@@ -5317,74 +5461,109 @@
      "padding": 16,
      "children": [
       {
-       "id": "HP26I",
+       "id": "4khGb",
        "type": "ref",
        "name": "St-Beras",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Beras 5kg - sisa 25"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/package-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "Y5SP1",
+       "id": "ECYPw",
        "type": "ref",
        "name": "St-Kopi",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Kopi Tubruk - sisa 8 (!)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/package-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "HA9kB",
+       "id": "F9yMi",
        "type": "ref",
        "name": "St-Roti",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Roti Tawar - sisa 5 (!)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/package-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "xRuFb",
+       "id": "pXuor",
        "type": "ref",
        "name": "St-Aqua",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Aqua 600ml - sisa 300"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/package-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "6VB9E",
+       "id": "VrlSb",
        "type": "ref",
        "name": "St-Indo",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Indomie - sisa 200"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/package-mut.png",
+          "mode": "fill"
+         }
         }
        }
       }
      ]
     },
     {
-     "id": "Wcqpw",
+     "id": "VECKi",
      "type": "frame",
      "name": "FootStok",
      "width": 390,
@@ -5396,14 +5575,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "URpJp",
+       "id": "PUZdg",
        "type": "ref",
        "name": "CTA-Opname",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "+ Stok Masuk / Opname"
         }
        }
@@ -5413,7 +5592,7 @@
    ]
   },
   {
-   "id": "lsU6B",
+   "id": "L6l7A",
    "type": "frame",
    "name": "17 Tambah Produk",
    "width": 390,
@@ -5425,7 +5604,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "tlPEJ",
+     "id": "ws4Y1",
      "type": "frame",
      "name": "Nav addp",
      "width": 390,
@@ -5438,7 +5617,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "SJPL6",
+       "id": "QzEGv",
        "type": "frame",
        "name": "Backaddp",
        "width": 36,
@@ -5450,22 +5629,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "pfBM8",
-         "type": "text",
-         "name": "BackaddpG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "8OR2W",
+         "type": "rectangle",
+         "name": "BackaddpImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "kYQYW",
+       "id": "7oNr5",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -5476,7 +5655,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "p2b3Z",
+         "id": "laqv4",
          "type": "text",
          "name": "Title",
          "content": "Tambah Produk",
@@ -5492,7 +5671,7 @@
      ]
     },
     {
-     "id": "sullU",
+     "id": "TGEwx",
      "type": "frame",
      "name": "AddpBody",
      "width": 390,
@@ -5504,7 +5683,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "7ZKhR",
+       "id": "2DrQc",
        "type": "frame",
        "name": "AddImg",
        "width": 358,
@@ -5517,7 +5696,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "FfDch",
+         "id": "nJOUa",
          "type": "text",
          "name": "AddImgTxt",
          "content": "+ Foto Produk",
@@ -5532,65 +5711,65 @@
        ]
       },
       {
-       "id": "id0pJ",
+       "id": "elUHV",
        "type": "ref",
        "name": "F-PNm",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Nama produk"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "cth: Kopi Kapal 200g"
         }
        }
       },
       {
-       "id": "SDZV3",
+       "id": "G3KtR",
        "type": "ref",
        "name": "F-PPr",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Harga jual (Rp)"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "28000"
         }
        }
       },
       {
-       "id": "rrZub",
+       "id": "cvHz7",
        "type": "ref",
        "name": "F-PSt",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Stok awal"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "50"
         }
        }
       },
       {
-       "id": "JoLmI",
+       "id": "FDpLx",
        "type": "ref",
        "name": "F-PCat",
-       "ref": "MzWn7",
+       "ref": "d19MS",
        "x": 0,
        "y": 0,
        "descendants": {
-        "gc1Th": {
+        "whnMu": {
          "content": "Kategori"
         },
-        "GyUfC": {
+        "vPmWv": {
          "content": "Minuman"
         }
        }
@@ -5598,7 +5777,7 @@
      ]
     },
     {
-     "id": "yY6KX",
+     "id": "oFQjS",
      "type": "frame",
      "name": "Foot addp",
      "width": 390,
@@ -5610,14 +5789,14 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "pjU50",
+       "id": "pM7Ul",
        "type": "ref",
        "name": "CTA addp",
-       "ref": "NesfW",
+       "ref": "9oKcy",
        "x": 0,
        "y": 0,
        "descendants": {
-        "NDZms": {
+        "03sX3": {
          "content": "Simpan Produk"
         }
        }
@@ -5627,7 +5806,7 @@
    ]
   },
   {
-   "id": "c502o",
+   "id": "6NL05",
    "type": "frame",
    "name": "18 Laporan",
    "width": 390,
@@ -5639,7 +5818,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "Qp3sx",
+     "id": "KWaNk",
      "type": "frame",
      "name": "Nav lap",
      "width": 390,
@@ -5652,7 +5831,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "zp72f",
+       "id": "JK3E6",
        "type": "frame",
        "name": "Backlap",
        "width": 36,
@@ -5664,22 +5843,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "pXsSm",
-         "type": "text",
-         "name": "BacklapG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "JY0R0",
+         "type": "rectangle",
+         "name": "BacklapImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "t61O0",
+       "id": "CU3VX",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -5690,7 +5869,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "hQcVh",
+         "id": "q1hfb",
          "type": "text",
          "name": "Title",
          "content": "Laporan",
@@ -5702,7 +5881,7 @@
          "textGrowth": "auto"
         },
         {
-         "id": "BakoP",
+         "id": "yMAE5",
          "type": "text",
          "name": "Subtitle",
          "content": "24 Sep 2026",
@@ -5718,7 +5897,7 @@
      ]
     },
     {
-     "id": "qHpLi",
+     "id": "71uLt",
      "type": "frame",
      "name": "LapBody",
      "width": 390,
@@ -5730,7 +5909,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "dtypy",
+       "id": "rkcUl",
        "type": "frame",
        "name": "LapRow",
        "width": 358,
@@ -5741,33 +5920,33 @@
        "gap": 16,
        "children": [
         {
-         "id": "5W0dZ",
+         "id": "lJrLF",
          "type": "ref",
          "name": "L-Omzet",
-         "ref": "WdWJD",
+         "ref": "gwYRL",
          "x": 0,
          "y": 0,
          "descendants": {
-          "RWYlQ": {
+          "tntGw": {
            "content": "Omzet hari ini"
           },
-          "fJaw1": {
+          "FnMMs": {
            "content": "Rp 4,2 jt"
           }
          }
         },
         {
-         "id": "FWSwO",
+         "id": "65nDW",
          "type": "ref",
          "name": "L-Laba",
-         "ref": "WdWJD",
+         "ref": "gwYRL",
          "x": 0,
          "y": 0,
          "descendants": {
-          "RWYlQ": {
+          "tntGw": {
            "content": "Laba kotor"
           },
-          "fJaw1": {
+          "FnMMs": {
            "content": "Rp 1,1 jt"
           }
          }
@@ -5775,7 +5954,7 @@
        ]
       },
       {
-       "id": "Iw71G",
+       "id": "sjzHH",
        "type": "frame",
        "name": "Chart",
        "width": 358,
@@ -5789,7 +5968,7 @@
        "strokeWidth": 1,
        "children": [
         {
-         "id": "QFyWE",
+         "id": "T5tZu",
          "type": "text",
          "name": "ChartT",
          "content": "Omzet 7 hari terakhir",
@@ -5802,7 +5981,7 @@
          "width": 326
         },
         {
-         "id": "NuBdI",
+         "id": "cqKku",
          "type": "frame",
          "name": "Bars",
          "width": 326,
@@ -5815,7 +5994,7 @@
          "alignItems": "end",
          "children": [
           {
-           "id": "6ejCT",
+           "id": "LL75I",
            "type": "frame",
            "name": "Bar0",
            "width": 36,
@@ -5828,7 +6007,7 @@
            "alignItems": "center",
            "children": [
             {
-             "id": "BmcIg",
+             "id": "Hwzft",
              "type": "rectangle",
              "name": "BarFill0",
              "fill": "$c.pri",
@@ -5837,7 +6016,7 @@
              "cornerRadius": 6
             },
             {
-             "id": "iiDQI",
+             "id": "zGYbM",
              "type": "text",
              "name": "BarD0",
              "content": "S",
@@ -5852,7 +6031,7 @@
            ]
           },
           {
-           "id": "w8ZOI",
+           "id": "t7vqq",
            "type": "frame",
            "name": "Bar1",
            "width": 36,
@@ -5865,7 +6044,7 @@
            "alignItems": "center",
            "children": [
             {
-             "id": "vmfX8",
+             "id": "cuPAl",
              "type": "rectangle",
              "name": "BarFill1",
              "fill": "$c.pri",
@@ -5874,7 +6053,7 @@
              "cornerRadius": 6
             },
             {
-             "id": "cuie0",
+             "id": "Qzr5k",
              "type": "text",
              "name": "BarD1",
              "content": "S",
@@ -5889,7 +6068,7 @@
            ]
           },
           {
-           "id": "mgMbX",
+           "id": "IvSw0",
            "type": "frame",
            "name": "Bar2",
            "width": 36,
@@ -5902,7 +6081,7 @@
            "alignItems": "center",
            "children": [
             {
-             "id": "0coSx",
+             "id": "5TlYn",
              "type": "rectangle",
              "name": "BarFill2",
              "fill": "$c.pri",
@@ -5911,7 +6090,7 @@
              "cornerRadius": 6
             },
             {
-             "id": "8ts8q",
+             "id": "X4p1e",
              "type": "text",
              "name": "BarD2",
              "content": "R",
@@ -5926,7 +6105,7 @@
            ]
           },
           {
-           "id": "J2SWe",
+           "id": "mN246",
            "type": "frame",
            "name": "Bar3",
            "width": 36,
@@ -5939,7 +6118,7 @@
            "alignItems": "center",
            "children": [
             {
-             "id": "kvBHz",
+             "id": "IRRIo",
              "type": "rectangle",
              "name": "BarFill3",
              "fill": "$c.pri",
@@ -5948,7 +6127,7 @@
              "cornerRadius": 6
             },
             {
-             "id": "M2Nlc",
+             "id": "06upV",
              "type": "text",
              "name": "BarD3",
              "content": "K",
@@ -5963,7 +6142,7 @@
            ]
           },
           {
-           "id": "SJRRg",
+           "id": "7FGb2",
            "type": "frame",
            "name": "Bar4",
            "width": 36,
@@ -5976,7 +6155,7 @@
            "alignItems": "center",
            "children": [
             {
-             "id": "0MIwY",
+             "id": "DZAi9",
              "type": "rectangle",
              "name": "BarFill4",
              "fill": "$c.pri",
@@ -5985,7 +6164,7 @@
              "cornerRadius": 6
             },
             {
-             "id": "kOt89",
+             "id": "5Evka",
              "type": "text",
              "name": "BarD4",
              "content": "J",
@@ -6000,7 +6179,7 @@
            ]
           },
           {
-           "id": "kfvHo",
+           "id": "guOEt",
            "type": "frame",
            "name": "Bar5",
            "width": 36,
@@ -6013,7 +6192,7 @@
            "alignItems": "center",
            "children": [
             {
-             "id": "ToGic",
+             "id": "tmA14",
              "type": "rectangle",
              "name": "BarFill5",
              "fill": "$c.pri",
@@ -6022,7 +6201,7 @@
              "cornerRadius": 6
             },
             {
-             "id": "Lz47a",
+             "id": "0iEBT",
              "type": "text",
              "name": "BarD5",
              "content": "S",
@@ -6037,7 +6216,7 @@
            ]
           },
           {
-           "id": "U5Hyk",
+           "id": "I0koO",
            "type": "frame",
            "name": "Bar6",
            "width": 36,
@@ -6050,7 +6229,7 @@
            "alignItems": "center",
            "children": [
             {
-             "id": "sZVuF",
+             "id": "ogu4j",
              "type": "rectangle",
              "name": "BarFill6",
              "fill": "$c.pri",
@@ -6059,7 +6238,7 @@
              "cornerRadius": 6
             },
             {
-             "id": "3exsB",
+             "id": "d2cBb",
              "type": "text",
              "name": "BarD6",
              "content": "M",
@@ -6078,28 +6257,42 @@
        ]
       },
       {
-       "id": "OOX8f",
+       "id": "leGy9",
        "type": "ref",
        "name": "L-Top",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Terlaris: Indomie (200)"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/chart-bar-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "YyrsH",
+       "id": "ejhn9",
        "type": "ref",
        "name": "L-Pay",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Tunai 70% - QRIS 30%"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/wallet-mut.png",
+          "mode": "fill"
+         }
         }
        }
       }
@@ -6108,7 +6301,7 @@
    ]
   },
   {
-   "id": "rcIFf",
+   "id": "fHr99",
    "type": "frame",
    "name": "19 Pengaturan",
    "width": 390,
@@ -6120,7 +6313,7 @@
    "layout": "vertical",
    "children": [
     {
-     "id": "G5ApO",
+     "id": "b3PfP",
      "type": "frame",
      "name": "Nav set",
      "width": 390,
@@ -6133,7 +6326,7 @@
      "padding": 16,
      "children": [
       {
-       "id": "3fmKu",
+       "id": "eF9ik",
        "type": "frame",
        "name": "Backset",
        "width": 36,
@@ -6145,22 +6338,22 @@
        "alignItems": "center",
        "children": [
         {
-         "id": "Z6omb",
-         "type": "text",
-         "name": "BacksetG",
-         "content": "<",
-         "fill": "$c.fg",
-         "fontSize": 16,
-         "fontFamily": "Outfit",
-         "textAlign": "center",
-         "fontWeight": "700",
-         "textGrowth": "fixed-width",
-         "width": 28
+         "id": "LEWxA",
+         "type": "rectangle",
+         "name": "BacksetImg",
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/arrow-left-mut.png",
+          "mode": "fill"
+         },
+         "width": 24,
+         "height": 24,
+         "cornerRadius": 0
         }
        ]
       },
       {
-       "id": "ZBGu0",
+       "id": "aVUTB",
        "type": "frame",
        "name": "TitleCol",
        "width": 280,
@@ -6171,7 +6364,7 @@
        "gap": 2,
        "children": [
         {
-         "id": "qwaBb",
+         "id": "4bSyB",
          "type": "text",
          "name": "Title",
          "content": "Pengaturan",
@@ -6187,7 +6380,7 @@
      ]
     },
     {
-     "id": "nrLeW",
+     "id": "thWEH",
      "type": "frame",
      "name": "SetBody",
      "width": 390,
@@ -6200,87 +6393,129 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "nGeZI",
+       "id": "Gge0B",
        "type": "ref",
        "name": "Se-Toko",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Profil Toko"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/store-blue.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "xvsw0",
+       "id": "n4yWJ",
        "type": "ref",
        "name": "Se-Print",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Printer & Struk"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/printer-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "BO3aO",
+       "id": "ahhLv",
        "type": "ref",
        "name": "Se-Pajak",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Pajak & Promo"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/tag-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "PdATF",
+       "id": "t9tpP",
        "type": "ref",
        "name": "Se-User",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Karyawan & PIN"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/users-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "TQBCj",
+       "id": "AEVEs",
        "type": "ref",
        "name": "Se-Sync",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Sinkronisasi: ON"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/refresh-ccw-mut.png",
+          "mode": "fill"
+         }
         }
        }
       },
       {
-       "id": "ETniN",
+       "id": "mQpfQ",
        "type": "ref",
        "name": "Se-Out",
-       "ref": "4WVIY",
+       "ref": "hrSQt",
        "x": 0,
        "y": 0,
        "descendants": {
-        "vwIDC": {
+        "mKf7M": {
          "content": "Keluar Akun"
+        },
+        "4Rktl": {
+         "fill": {
+          "type": "image",
+          "url": "./assets/icons/log-out-mut.png",
+          "mode": "fill"
+         }
         }
        }
       }
      ]
     },
     {
-     "id": "Ph0ra",
+     "id": "qwk3g",
      "type": "frame",
      "name": "SetVer",
      "width": 390,
@@ -6291,7 +6526,7 @@
      "alignItems": "center",
      "children": [
       {
-       "id": "6GPSY",
+       "id": "luyc4",
        "type": "text",
        "name": "Ver",
        "content": "Berkah POS v2.4.0",

@@ -73,6 +73,21 @@ def IC(name, glyph, size=20, fg="$c.onpri", bg="$c.pri", box=40,
         {"layout": "vertical", "justifyContent": "center",
          "alignItems": "center"})
 
+def IMG(name, url, w, h, radius=0):
+    """Real image fill (icon PNG / product photo, relative ./assets/)."""
+    o = {"id": nid(), "type": "rectangle", "name": name,
+         "fill": {"type": "image", "url": url, "mode": "fill"},
+         "width": w, "height": h, "cornerRadius": radius}
+    return o
+
+def ICON(name, png, box=40, radius=12, bg="$c.pri"):
+    """Real Lucide icon PNG centered on colored box."""
+    return F(name, box, box, V(bg[1:]) if bg.startswith("$") else bg, [
+        IMG(name + "Img", "./assets/icons/" + png, box - 12,
+            box - 12, 0)], radius,
+        {"layout": "vertical", "justifyContent": "center",
+         "alignItems": "center"})
+
 # icon glyphs per slot (letters render reliably in Outfit)
 IC_LOGO, IC_CART, IC_HOME = "B", "K", "B"
 IC_HIST, IC_MORE, IC_BACK = "R", "L", "<"
@@ -85,8 +100,8 @@ STATUS = lambda tag: F("Status " + tag, 390, 62, V("c.card"), [
      "alignItems": "center", "padding": 20})
 
 def NAVBACK(tag, title, sub=None):
-    kids = [IC("Back" + tag, IC_BACK, size=16, fg="$c.fg",
-               bg="$c.mut", box=36, radius=10)]
+    kids = [ICON("Back" + tag, "arrow-left-mut.png", box=36,
+                 radius=10, bg="$c.mut")]
     tcol = [T("Title", title, 16, V("c.fg"), weight="700")]
     if sub:
         tcol.append(T("Subtitle", sub, 11, V("c.mfg")))
@@ -152,7 +167,8 @@ cartrow = F("Cmp CartRow", 358, 76, V("c.card"), [
         "strokeWidth": 1}, reuse=True)
 
 menrow = F("Cmp MenuRow", 358, 60, V("c.card"), [
-    IC("D_MN_IC_BOX", "M", size=18, box=40, radius=12),
+    ICON("D_MN_IC_BOX", "chevron-right-mut.png", box=40, radius=12,
+         bg="$c.mut"),
     T("D_MN_LBL", "Menu", 14, V("c.fg"), weight="600", w=220),
     T("D_MN_AR", ">", 16, V("c.mfg"), align="right", weight="700",
       w=30),
@@ -194,11 +210,83 @@ for c in children:
     DESCMAP[c["name"]] = m
 
 def RB(comp_name, ref_name, **overrides):
-    """ref with placeholder overrides resolved to real descendant IDs."""
+    """ref with placeholder overrides resolved to real descendant IDs.
+    Value may be str (text content) or dict like
+    {"img": "./assets/x.jpg"} (image fill override)."""
     m = DESCMAP[comp_name]
     desc = {}
     for k, v in overrides.items():
-        desc[m[k]] = {"content": v}
+        if isinstance(v, dict) and "img" in v:
+            desc[m[k]] = {"fill": {"type": "image", "url": v["img"],
+                                   "mode": "fill"}}
+        else:
+            desc[m[k]] = {"content": v}
+    return REF(ref_name, COMPS[comp_name],
+               desc=desc if desc else None)
+
+# product photo per katalog slot (matches ./assets/*.jpg)
+PRODIMG = ["./assets/kopi.jpg", "./assets/tehpucuk.jpg",
+           "./assets/indomie.jpg", "./assets/roti.jpg",
+           "./assets/susu.jpg", "./assets/chitato.jpg"]
+CARTIMG = ["./assets/kopi.jpg", "./assets/indomie.jpg",
+           "./assets/aqua.jpg"]
+
+# lucide icon PNG per MenuRow instance (matches ./assets/icons/*-mut.png)
+MN_ICON = {"Sh-Pagi": "clock-mut.png", "Sh-Siang": "clock-mut.png",
+           "Sh-Malam": "clock-mut.png",
+           "Cu-Umum": "user-mut.png", "Cu-Budi": "user-mut.png",
+           "Cu-Sari": "user-mut.png", "Cu-Agung": "user-mut.png",
+           "Cu-Plus": "plus-mut.png",
+           "H-129": "receipt-mut.png", "H-128": "receipt-mut.png",
+           "H-127": "receipt-mut.png", "H-126": "receipt-mut.png",
+           "H-125": "receipt-mut.png",
+           "St-Beras": "package-mut.png", "St-Kopi": "package-mut.png",
+           "St-Roti": "package-mut.png", "St-Aqua": "package-mut.png",
+           "St-Indo": "package-mut.png",
+           "L-Top": "chart-bar-mut.png", "L-Pay": "wallet-mut.png",
+           "Se-Toko": "store-blue.png", "Se-Print": "printer-mut.png",
+           "Se-Pajak": "tag-mut.png", "Se-User": "users-mut.png",
+           "Se-Sync": "refresh-ccw-mut.png",
+           "Se-Out": "log-out-mut.png"}
+
+def RBI(comp_name, ref_name, icon_png=None, **overrides):
+    """RB + icon-image override for the row's icon box glyph."""
+    if icon_png:
+        # nested glyph id inside D_MN_IC_BOX is "<boxname>G"
+        m = DESCMAP[comp_name]
+        box_keys = [k for k in m if k == "D_MN_IC_BOX"]
+        if box_keys:
+            # find icon img child id by walking component tree
+            # (ICON() names it "<boxname>Img")
+            def _find(o):
+                if o.get("name") == "D_MN_IC_BOXImg":
+                    return o["id"]
+                for ch in o.get("children", []):
+                    r = _find(ch)
+                    if r:
+                        return r
+                return None
+            for _c in children:
+                if _c["name"] == comp_name:
+                    gid = _find(_c)
+                    if gid:
+                        overrides.setdefault("__icon__", (gid, icon_png))
+                    break
+    # split icon override out of text overrides
+    icon = overrides.pop("__icon__", None)
+    m = DESCMAP[comp_name]
+    desc = {}
+    for k, v in overrides.items():
+        if isinstance(v, dict) and "img" in v:
+            desc[m[k]] = {"fill": {"type": "image", "url": v["img"],
+                                   "mode": "fill"}}
+        else:
+            desc[m[k]] = {"content": v}
+    if icon:
+        gid, png = icon
+        desc[gid] = {"fill": {"type": "image",
+                              "url": "./assets/icons/" + png,
+                              "mode": "fill"}}
     return REF(ref_name, COMPS[comp_name],
                desc=desc if desc else None)
 
@@ -229,7 +317,7 @@ def next_x():
 # ============ 01 SPLASH ============
 SCR("01 Splash", [
     F("SplashBody", 390, 782, V("c.pri"), [
-        IC("SplashLogo", IC_LOGO, size=48, box=96, radius=26),
+        IMG("SplashLogo", "./assets/icons/store-white.png", 96, 96, 26),
         T("SplashName", "Berkah POS", 28, V("c.onpri"), align="center",
           weight="700", w=340),
         T("SplashSub", "Kasir cepat untuk toko Anda", 14,
@@ -247,7 +335,8 @@ SCR("01 Splash", [
 SCR("02 Login", [
     STATUS("login"),
     F("LoginBody", 390, 600, V("c.bg"), [
-        IC("LoginLogo", IC_LOGO, size=36, box=72, radius=20),
+        ICON("LoginLogo", "store-blue.png", box=72, radius=20,
+             bg="$c.mut"),
         T("LoginTitle", "Selamat Datang", 22, V("c.fg"), align="center",
           weight="700", w=340),
         T("LoginSub", "Masuk untuk mulai berjualan", 13, V("c.mfg"),
@@ -293,9 +382,9 @@ SCR("03 PIN Kasir", [
 SCR("04 Pilih Shift", [
     NAVBACK("shift", "Pilih Shift"),
     F("ShiftBody", 390, 560, V("c.bg"), [
-        RB("Cmp MenuRow", "Sh-Pagi", D_MN_LBL="Shift Pagi (07-15)"),
-        RB("Cmp MenuRow", "Sh-Siang", D_MN_LBL="Shift Siang (15-23)"),
-        RB("Cmp MenuRow", "Sh-Malam", D_MN_LBL="Shift Malam (23-07)"),
+        RBI("Cmp MenuRow", "Sh-Pagi", "clock-mut.png", D_MN_LBL="Shift Pagi (07-15)"),
+        RBI("Cmp MenuRow", "Sh-Siang", "clock-mut.png", D_MN_LBL="Shift Siang (15-23)"),
+        RBI("Cmp MenuRow", "Sh-Malam", "clock-mut.png", D_MN_LBL="Shift Malam (23-07)"),
         RB("Cmp Field", "F-Modal", D_FD_LBL="Modal awal kas (Rp)",
            D_FD_VAL="500.000"),
     ], 0, {"layout": "vertical", "gap": 10, "padding": 16}),
@@ -320,12 +409,14 @@ chips.append(F("Cat More", 34, 36, V("c.card"),
     999, {"layout": "vertical", "justifyContent": "center",
           "alignItems": "center"}))
 cards = [RB("Cmp ProdCard", "Card %d" % i, D_PROD_NM=nm,
-            D_PROD_PR=pr, D_PROD_ST=st)
+            D_PROD_PR=pr, D_PROD_ST=st,
+            D_PROD_TH={"img": PRODIMG[i % len(PRODIMG)]})
          for i, (nm, pr, st) in enumerate(PRODS)]
 SCR("05 Katalog", [
     STATUS("kat"),
     F("AppBar", 390, 64, V("c.card"), [
-        IC("Logo", IC_LOGO, size=20, box=40, radius=12),
+        ICON("Logo", "store-blue.png", box=40, radius=12,
+             bg="$c.mut"),
         F("Store", 220, 46, V("c.card"), [
             T("StoreNm", "Toko Berkah Jaya", 16, V("c.fg"),
               weight="700"),
@@ -335,8 +426,8 @@ SCR("05 Katalog", [
            "padding": 16}),
     F("SearchW", 390, 68, V("c.card"), [
         F("Search", 358, 46, V("c.mut"), [
-            IC("SearchIc", IC_SEARCH, size=16, fg="$c.mfg",
-               bg="$c.mut", box=32, radius=8),
+            ICON("SearchIc", "search-mut.png", box=32, radius=8,
+                 bg="$c.mut"),
             T("SearchHint", "Cari produk / scan barcode...", 13,
               V("c.mfg"), w=280)], 12,
           {"layout": "horizontal", "gap": 8, "alignItems": "center",
@@ -363,25 +454,25 @@ SCR("05 Katalog", [
     ], 0, {"layout": "vertical", "gap": 8, "padding": 16}),
     F("TabBar", 390, 68, V("c.card"), [
         F("TbHome", 80, 52, V("c.card"), [
-            IC("TbHomeIc", IC_HOME, size=16, box=28, radius=8),
+            ICON("TbHomeIc", "home-white.png", box=28, radius=8),
             T("Tb1", "Beranda", 10, V("c.pri"), align="center",
               weight="700", w=80)], 0,
           {"layout": "vertical", "gap": 2, "alignItems": "center"}),
         F("TbCart", 90, 52, V("c.card"), [
-            IC("TbCartIc", IC_CART, size=16, fg="$c.mfg", bg="$c.mut",
-               box=28, radius=8),
+            ICON("TbCartIc", "shopping-cart-mut.png", box=28, radius=8,
+                 bg="$c.mut"),
             T("Tb2", "Keranjang (2)", 10, V("c.mfg"), align="center",
               weight="700", w=90)], 0,
           {"layout": "vertical", "gap": 2, "alignItems": "center"}),
         F("TbHist", 80, 52, V("c.card"), [
-            IC("TbHistIc", IC_HIST, size=16, fg="$c.mfg", bg="$c.mut",
-               box=28, radius=8),
+            ICON("TbHistIc", "history-mut.png", box=28, radius=8,
+                 bg="$c.mut"),
             T("Tb3", "Riwayat", 10, V("c.mfg"), align="center",
               weight="700", w=80)], 0,
           {"layout": "vertical", "gap": 2, "alignItems": "center"}),
         F("TbMore", 80, 52, V("c.card"), [
-            IC("TbMoreIc", IC_MORE, size=16, fg="$c.mfg", bg="$c.mut",
-               box=28, radius=8),
+            ICON("TbMoreIc", "settings-mut.png", box=28, radius=8,
+                 bg="$c.mut"),
             T("Tb4", "Lainnya", 10, V("c.mfg"), align="center",
               weight="700", w=80)], 0,
           {"layout": "vertical", "gap": 2, "alignItems": "center"}),
@@ -419,7 +510,9 @@ rows = [("Kopi Tubruk 200g", "Rp 28.000 /pcs", "Rp 28.000"),
         ("Indomie Goreng x2", "Rp 3.500 /pcs", "Rp 7.000"),
         ("Aqua 600ml", "Rp 4.000 /pcs", "Rp 4.000")]
 s2rows = [RB("Cmp CartRow", "Row %d" % i, D_CR_NM=n, D_CR_PR=p,
-             D_CR_AMT=a) for i, (n, p, a) in enumerate(rows)]
+             D_CR_AMT=a,
+             D_CR_TH={"img": CARTIMG[i % len(CARTIMG)]})
+          for i, (n, p, a) in enumerate(rows)]
 SCR("07 Keranjang", [
     NAVBACK("cart", "Keranjang - 3 item", "Toko Berkah Jaya"),
     F("List", 390, 300, V("c.bg"), s2rows, 0,
@@ -457,11 +550,11 @@ SCR("08 Pelanggan", [
            "padding": 14})],
       0, {"layout": "vertical", "alignItems": "center"}),
     F("CustBody", 390, 440, V("c.bg"), [
-        RB("Cmp MenuRow", "Cu-Umum", D_MN_LBL="Pelanggan Umum"),
-        RB("Cmp MenuRow", "Cu-Budi", D_MN_LBL="Budi (0812-111)"),
-        RB("Cmp MenuRow", "Cu-Sari", D_MN_LBL="Sari (0813-222)"),
-        RB("Cmp MenuRow", "Cu-Agung", D_MN_LBL="Agung (0819-333)"),
-        RB("Cmp MenuRow", "Cu-Plus", D_MN_LBL="+ Tambah Pelanggan"),
+        RBI("Cmp MenuRow", "Cu-Umum", "user-mut.png", D_MN_LBL="Pelanggan Umum"),
+        RBI("Cmp MenuRow", "Cu-Budi", "user-mut.png", D_MN_LBL="Budi (0812-111)"),
+        RBI("Cmp MenuRow", "Cu-Sari", "user-mut.png", D_MN_LBL="Sari (0813-222)"),
+        RBI("Cmp MenuRow", "Cu-Agung", "user-mut.png", D_MN_LBL="Agung (0819-333)"),
+        RBI("Cmp MenuRow", "Cu-Plus", "plus-mut.png", D_MN_LBL="+ Tambah Pelanggan"),
     ], 0, {"layout": "vertical", "gap": 10, "padding": 16}),
     FOOTCTA("cust", COMPS["Cmp BtnPrimary"], "Lanjut Tanpa Member"),
 ], next_x())
@@ -518,7 +611,8 @@ SCR("10 Bayar QRIS", [
         T("QrisTot", "Total  Rp 38.610", 18, V("c.fg"), align="center",
           weight="700", w=358),
         F("QrBox", 260, 260, V("c.card"), [
-            R("QrFake", V("c.fg"), 200, 200, 8)],
+            IMG("QrImg", "./assets/icons/qr-code-mut.png", 200, 200,
+                8)],
             16, {"layout": "vertical", "justifyContent": "center",
                  "alignItems": "center", "stroke": V("c.line"),
                  "strokeWidth": 1}),
@@ -539,8 +633,8 @@ SCR("10 Bayar QRIS", [
 SCR("11 Sukses", [
     STATUS("ok"),
     F("Hero", 390, 200, V("c.bg"), [
-        IC("Check", IC_OK, size=40, fg="$c.ok", bg="$c.okbg",
-           box=88, radius=999),
+        ICON("Check", "check-green.png", box=88, radius=999,
+             bg="$c.okbg"),
         T("OkTitle", "Pembayaran Berhasil", 19, V("c.fg"),
           align="center", weight="700", w=320),
         T("OkSub", "Order #129 - Tunai - 09.42 WIB", 13,
@@ -639,11 +733,11 @@ SCR("13 Riwayat", [
                  "stroke": V("c.line"), "strokeWidth": 1})],
       0, {"layout": "vertical", "alignItems": "center"}),
     F("HistBody", 390, 480, V("c.bg"), [
-        RB("Cmp MenuRow", "H-129", D_MN_LBL="#129 - Rp 38.610"),
-        RB("Cmp MenuRow", "H-128", D_MN_LBL="#128 - Rp 52.000"),
-        RB("Cmp MenuRow", "H-127", D_MN_LBL="#127 - Rp 15.500"),
-        RB("Cmp MenuRow", "H-126", D_MN_LBL="#126 - Rp 120.000"),
-        RB("Cmp MenuRow", "H-125", D_MN_LBL="#125 - Rp 8.000"),
+        RBI("Cmp MenuRow", "H-129", "receipt-mut.png", D_MN_LBL="#129 - Rp 38.610"),
+        RBI("Cmp MenuRow", "H-128", "receipt-mut.png", D_MN_LBL="#128 - Rp 52.000"),
+        RBI("Cmp MenuRow", "H-127", "receipt-mut.png", D_MN_LBL="#127 - Rp 15.500"),
+        RBI("Cmp MenuRow", "H-126", "receipt-mut.png", D_MN_LBL="#126 - Rp 120.000"),
+        RBI("Cmp MenuRow", "H-125", "receipt-mut.png", D_MN_LBL="#125 - Rp 8.000"),
         F("HistSum", 358, 60, V("c.pri"), [
             T("HistSumTxt", "128 transaksi - Rp 4.215.000", 14,
               V("c.onpri"), align="center", weight="700", w=326)],
@@ -718,13 +812,13 @@ SCR("16 Stok", [
                "padding": 14})],
       0, {"layout": "vertical", "alignItems": "center"}),
     F("StokBody", 390, 440, V("c.bg"), [
-        RB("Cmp MenuRow", "St-Beras", D_MN_LBL="Beras 5kg - sisa 25"),
-        RB("Cmp MenuRow", "St-Kopi",
+        RBI("Cmp MenuRow", "St-Beras", "package-mut.png", D_MN_LBL="Beras 5kg - sisa 25"),
+        RBI("Cmp MenuRow", "St-Kopi", "package-mut.png",
            D_MN_LBL="Kopi Tubruk - sisa 8 (!)"),
-        RB("Cmp MenuRow", "St-Roti", D_MN_LBL="Roti Tawar - sisa 5 (!)"),
-        RB("Cmp MenuRow", "St-Aqua",
+        RBI("Cmp MenuRow", "St-Roti", "package-mut.png", D_MN_LBL="Roti Tawar - sisa 5 (!)"),
+        RBI("Cmp MenuRow", "St-Aqua", "package-mut.png",
            D_MN_LBL="Aqua 600ml - sisa 300"),
-        RB("Cmp MenuRow", "St-Indo",
+        RBI("Cmp MenuRow", "St-Indo", "package-mut.png",
            D_MN_LBL="Indomie - sisa 200"),
     ], 0, {"layout": "vertical", "gap": 10, "padding": 16}),
     F("FootStok", 390, 84, V("c.card"), [
@@ -782,9 +876,9 @@ SCR("18 Laporan", [
                "justifyContent": "center", "alignItems": "end"}),
         ], 14, {"layout": "vertical", "gap": 8, "padding": 14,
                 "stroke": V("c.line"), "strokeWidth": 1}),
-        RB("Cmp MenuRow", "L-Top",
+        RBI("Cmp MenuRow", "L-Top", "chart-bar-mut.png",
            D_MN_LBL="Terlaris: Indomie (200)"),
-        RB("Cmp MenuRow", "L-Pay",
+        RBI("Cmp MenuRow", "L-Pay", "wallet-mut.png",
            D_MN_LBL="Tunai 70% - QRIS 30%"),
     ], 0, {"layout": "vertical", "gap": 12, "padding": 16}),
 ], next_x())
@@ -793,13 +887,13 @@ SCR("18 Laporan", [
 SCR("19 Pengaturan", [
     NAVBACK("set", "Pengaturan"),
     F("SetBody", 390, 560, V("c.bg"), [
-        RB("Cmp MenuRow", "Se-Toko", D_MN_LBL="Profil Toko"),
-        RB("Cmp MenuRow", "Se-Print",
+        RBI("Cmp MenuRow", "Se-Toko", "store-blue.png", D_MN_LBL="Profil Toko"),
+        RBI("Cmp MenuRow", "Se-Print", "printer-mut.png",
            D_MN_LBL="Printer & Struk"),
-        RB("Cmp MenuRow", "Se-Pajak", D_MN_LBL="Pajak & Promo"),
-        RB("Cmp MenuRow", "Se-User", D_MN_LBL="Karyawan & PIN"),
-        RB("Cmp MenuRow", "Se-Sync", D_MN_LBL="Sinkronisasi: ON"),
-        RB("Cmp MenuRow", "Se-Out", D_MN_LBL="Keluar Akun"),
+        RBI("Cmp MenuRow", "Se-Pajak", "tag-mut.png", D_MN_LBL="Pajak & Promo"),
+        RBI("Cmp MenuRow", "Se-User", "users-mut.png", D_MN_LBL="Karyawan & PIN"),
+        RBI("Cmp MenuRow", "Se-Sync", "refresh-ccw-mut.png", D_MN_LBL="Sinkronisasi: ON"),
+        RBI("Cmp MenuRow", "Se-Out", "log-out-mut.png", D_MN_LBL="Keluar Akun"),
     ], 0, {"layout": "vertical", "gap": 10, "padding": 16, "alignItems": "center"}),
     F("SetVer", 390, 60, V("c.bg"),
       [T("Ver", "Berkah POS v2.4.0", 12, V("c.mfg"), align="center",
