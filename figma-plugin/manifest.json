@@ -1,0 +1,6 @@
+{
+  "name": "Kasir POS Sync",
+  "id": "kasir-pos-sync",
+  "api": "1.0.0",
+  "main": "code.js"
+}
