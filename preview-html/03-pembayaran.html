@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, initial-scale=1">
+<title>Kasir POS HP — 03 Pembayaran</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2563EB;--accent:#EA580C;--bg:#F8FAFC;--fg:#1E293B;--card:#fff;--mut:#E9EFF8;--mutfg:#64748B;--line:#E2E8F0;--ok:#16A34A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Work Sans',system-ui;background:#0F172A;display:flex;justify-content:center;min-height:100vh;padding:24px 12px}
+.phone{width:390px;min-height:844px;background:var(--bg);border-radius:36px;overflow:hidden;display:flex;flex-direction:column;color:var(--fg);box-shadow:0 30px 80px #00000088}
+h1,h2,h3,b,.num{font-family:'Outfit',sans-serif}
+.status{background:#fff;display:flex;justify-content:space-between;padding:12px 22px 4px;font-size:12px;font-weight:700}
+.nav{background:#fff;padding:10px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+.back{width:36px;height:36px;border-radius:11px;background:var(--mut);display:grid;place-items:center;font-size:17px;cursor:pointer}
+.nav b{font-size:15px}
+.totalcard{margin:14px 16px 10px;background:linear-gradient(135deg,#2563EB,#1D4ED8);border-radius:16px;padding:18px;color:#fff;text-align:center}
+.totalcard small{opacity:.8;font-size:12px}.totalcard b{font-size:32px;display:block;margin-top:2px}
+.body{flex:1;padding:2px 16px;overflow-y:auto}
+.lbl{font-size:12px;font-weight:800;color:var(--mutfg);margin:12px 0 8px;text-transform:uppercase;letter-spacing:.5px}
+.pm{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pm button{border:2px solid var(--line);background:#fff;border-radius:13px;padding:14px 8px;font-size:13px;font-weight:800;cursor:pointer;display:flex;flex-direction:column;gap:5px;align-items:center;font-family:'Work Sans';color:var(--fg)}
+.pm button span{font-size:24px}.pm button.on{border-color:var(--primary);background:#EFF6FF;color:var(--primary)}
+.denom{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.denom button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:12px 4px;font-weight:800;font-size:12.5px;cursor:pointer;font-family:'Rubik';color:var(--fg)}
+.denom button.on{background:var(--primary);color:#fff;border-color:var(--primary)}
+.chg{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:13px;padding:12px;text-align:center;margin-top:12px;font-size:12.5px;color:var(--mutfg)}
+.chg b{color:var(--ok);font-size:24px;display:block}
+.foot{background:#fff;border-top:1px solid var(--line);padding:12px 16px 22px}
+.go{width:100%;padding:15px;border:0;border-radius:13px;background:var(--primary);color:#fff;font-size:15px;font-weight:700;cursor:pointer;font-family:'Rubik'}
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="status"><span>09.41</span><span>●●● ○ 5G ▮</span></div>
+  <div class="nav"><div class="back">←</div><div><b>Pembayaran</b></div></div>
+  <div class="totalcard"><small>Total Tagihan</small><b class="num">Rp 38.610</b></div>
+  <div class="body">
+    <div class="lbl">Metode Pembayaran</div>
+    <div class="pm">
+      <button class="on"><span>💵</span>Tunai</button>
+      <button><span>📷</span>QRIS</button>
+      <button><span>💳</span>Debit</button>
+      <button><span>📱</span>E-Wallet</button>
+    </div>
+    <div class="lbl">Uang Diterima</div>
+    <div class="denom">
+      <button> Rp 40 rb </button><button class="on">Rp 50 rb</button><button>Rp 100 rb</button>
+    </div>
+    <div class="chg">Kembalian<b class="num">Rp 11.390</b></div>
+  </div>
+  <div class="foot"><button class="go">Selesaikan Transaksi ✔</button></div>
+</div>
+</body>
+</html>

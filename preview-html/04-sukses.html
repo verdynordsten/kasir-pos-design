@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, initial-scale=1">
+<title>Kasir POS HP — 04 Sukses</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2563EB;--accent:#EA580C;--bg:#F8FAFC;--fg:#1E293B;--card:#fff;--mut:#E9EFF8;--mutfg:#64748B;--line:#E2E8F0;--ok:#16A34A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Work Sans',system-ui;background:#0F172A;display:flex;justify-content:center;min-height:100vh;padding:24px 12px}
+.phone{width:390px;min-height:844px;background:var(--bg);border-radius:36px;overflow:hidden;display:flex;flex-direction:column;color:var(--fg);box-shadow:0 30px 80px #00000088}
+h1,h2,h3,b,.num{font-family:'Outfit',sans-serif}
+.status{background:#fff;display:flex;justify-content:space-between;padding:12px 22px 4px;font-size:12px;font-weight:700}
+.body{flex:1;display:flex;flex-direction:column;align-items:center;padding:30px 24px 12px;text-align:center}
+.check{width:88px;height:88px;border-radius:50%;background:#DCFCE7;display:grid;place-items:center;font-size:44px;margin-bottom:16px}
+.body h2{font-size:19px;margin-bottom:4px}.body p{font-size:13px;color:var(--mutfg)}
+.struk{background:#fff;border:1px solid var(--line);border-radius:14px;width:100%;margin-top:18px;padding:16px;font-size:12.5px;text-align:left}
+.struk .hd{text-align:center;margin-bottom:10px}.struk .hd b{font-size:14px}.struk .hd small{color:var(--mutfg);display:block}
+.struk .r{display:flex;justify-content:space-between;margin-bottom:4px}
+.struk .dv{border-top:1px dashed var(--line);margin:8px 0}
+.struk .gr{font-weight:800;font-size:14px}
+.foot{background:#fff;border-top:1px solid var(--line);padding:12px 16px 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.foot button{padding:14px;border-radius:12px;font-weight:800;font-size:14px;cursor:pointer;font-family:'Rubik'}
+.ghost{background:#fff;border:1.5px solid var(--line);color:var(--fg)}
+.solid{background:var(--accent);border:0;color:#fff}
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="status"><span>09.41</span><span>●●● ○ 5G ▮</span></div>
+  <div class="body">
+    <div class="check">✓</div>
+    <h2>Pembayaran Berhasil</h2>
+    <p>Order #129 • Tunai • 09.42 WIB</p>
+    <div class="struk">
+      <div class="hd"><b>Toko Berkah Jaya</b><small>Jl. Merdeka No. 12 • 0812-3456-7890</small></div>
+      <div class="r"><span>Kopi Tubruk ×1</span><span class="num">28.000</span></div>
+      <div class="r"><span>Indomie Goreng ×2</span><span class="num">7.000</span></div>
+      <div class="r"><span>Aqua 600ml ×1</span><span class="num">4.000</span></div>
+      <div class="dv"></div>
+      <div class="r"><span>Subtotal</span><span class="num">39.000</span></div>
+      <div class="r"><span>Promo HEMAT10</span><span class="num">−3.900</span></div>
+      <div class="r"><span>Pajak 10%</span><span class="num">3.510</span></div>
+      <div class="dv"></div>
+      <div class="r gr"><span>Total</span><span class="num">Rp 38.610</span></div>
+      <div class="r"><span>Tunai</span><span class="num">50.000</span></div>
+      <div class="r"><span>Kembalian</span><span class="num">11.390</span></div>
+    </div>
+  </div>
+  <div class="foot"><button class="ghost">🖨 Cetak Struk</button><button class="solid">Transaksi Baru +</button></div>
+</div>
+</body>
+</html>
